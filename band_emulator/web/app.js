@@ -39,7 +39,7 @@ function render(r){
   if(!r.milestones.length)$('milestones').append(node('li','Готов к запуску оригинального образа'));
   $('console').textContent=r.console||'Вывод прошивки появится после запуска C runtime.';
   $('registers').replaceChildren(...Object.entries(r.registers).map(([k,v])=>{const el=node('div');el.append(node('span',k),node('b',v));return el;}));
-  $('trace').textContent=r.trace.map(t=>`${t.address.padEnd(12)} ${t.instruction}`).join('\n')||'Инструкции ещё не исполнялись.';
+  $('trace').textContent=r.trace.length?r.trace.map(t=>`${t.address.padEnd(12)} ${t.instruction}`).join('\n'):(r.next||[]).length?'Трасса пишется только при пошаговом исполнении. Следующие инструкции от PC:\n'+r.next.map(t=>`${t.address.padEnd(12)} ${t.instruction}`).join('\n'):'Инструкции ещё не исполнялись.';
   $('breakpoints').replaceChildren(...r.breakpoints.map(address=>{const b=node('button',address+' ×');b.title='Удалить точку останова';b.onclick=()=>command('remove_breakpoint',{address});return b;}));
   $('snapshots').replaceChildren(...r.snapshots.map(name=>{const el=node('div'),restore=node('button','Восстановить'),remove=node('button','×');restore.onclick=()=>command('restore',{name});remove.title='Удалить снимок';remove.onclick=()=>command('delete_snapshot',{name});el.append(node('span',name),restore,remove);return el;}));
   $('gpioState').textContent=Object.entries(r.gpio.banks).map(([addr,b])=>`${addr}\nВходы ${b.inputs}   Выходы ${b.output}\nНаправление ${b.direction}   IRQ enabled ${b.enabled}\nОжидают ${b.pending}   Маска ${b.masked}\n`).join('\n')+`\nIRQ ${r.gpio.irq}: ${r.gpio.asserted?'активен':'не активен'}`;

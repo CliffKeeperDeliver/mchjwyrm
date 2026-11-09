@@ -114,9 +114,13 @@ class BootUnitTests(unittest.TestCase):
         d.set_register('lr', 0x0c100085)
         d.set_breakpoint(0x0c101610)
         self.assertEqual(d.advance()['status'], 'breakpoint')
+        # Running counts the replaced call as one instruction, so a budget of
+        # one ends on the return address with the service performed.
         self.assertEqual(d.advance(1)['status'], 'budget')
-        self.assertEqual(d.pc, 0x0c100086)
+        self.assertEqual(d.pc, 0x0c100084)
         self.assertEqual(d.replacements[-1]['service'], 'bootmode_read')
+        self.assertEqual(d.advance(1, stepping=True)['status'], 'stepped')
+        self.assertEqual(d.pc, 0x0c100086)
 
     def test_terminal_fault_cannot_be_blindly_resumed(self):
         d = machine()
@@ -171,6 +175,16 @@ class BootUnitTests(unittest.TestCase):
         self.assertTrue(c.systick['pending'])
         self.assertEqual(c.read(0xe000e010, 4), 0x10007)
         self.assertEqual(c.read(0xe000e010, 4), 7)
+        # Bulk ticks (chunked execution) equal the same number of single ticks.
+        for clock, n in ((7, 1000), (3, 50000), (7, 1)):
+            one, bulk = BootSystemControl(), BootSystemControl()
+            for x in (one, bulk):
+                x.write(0xe000e014, 4, 37)
+                x.write(0xe000e010, 4, clock)
+            for _ in range(n):
+                one.tick()
+            bulk.tick(n)
+            self.assertEqual((one.systick, one.systick_phase), (bulk.systick, bulk.systick_phase))
         c.shpr[11] = 0xa0
         d.cpu.reg_write(arm.UC_ARM_REG_BASEPRI, 0x80)
         self.assertIsNone(d.exceptions.pending_irq())
@@ -280,22 +294,41 @@ class StockBootTests(unittest.TestCase):
         d.restore('board')
         d.breakpoints.discard(0x0c4ee35c)
         # Continue to the real next unsupported board dependency; no fake success.
-        for _ in range(4):
+        for _ in range(12):
             r = d.advance(2000000, 30000)
             if r['status'] not in ('budget', 'timeout'):
                 break
         self.assertEqual(r['status'], 'memory_fault', r.get('fault'))
-        self.assertEqual(r['fault']['address'], '0x40160404')
+        self.assertEqual(r['fault']['address'], '0x402001a8')  # LCD controller (display init)
         stages = {m['stage'] for m in r['milestones']}
         self.assertTrue({'board_storage_init_returned', 'board_init_returned'} <= stages)
-        self.assertIn('bes_main', {t['name'] for t in r['tasks']})
+        self.assertTrue({'bes_main', 'audio_flinger'} <= {t['name'] for t in r['tasks']})
         # Stock hal_analogif_open read PMU CHIP_ID over ISPI and accepted 0x153.
         self.assertGreater(r['ispi']['frames'], 400)
         self.assertNotIn('cs3 page0 0x00', r['ispi']['assumed_zero'])
         self.assertIn('bt_controller_absent', {x['service'] for x in r['hle_replacements']})
+        # The stock NAND driver identified the chip and configured it.
+        self.assertIn('9f tx=00 rx=3', r['nand']['recent'] + [x for x in d.nand.chip.log])
+        self.assertGreater(r['nand']['commands'], 10)
+        self.assertEqual(r['register_blocks']['AON_CMU']['base'], '0x40080000')
         self.assertTrue(any(e['exception'] == 62 for e in r['exceptions']['events']))
         with self.assertRaises(ValueError):
             d.advance()
+
+    def test_result_does_not_depend_on_run_slicing(self):
+        # IRQs pending while masked are taken right after the unmask
+        # instruction; previously the boot outcome depended on slice sizes.
+        results = []
+        for budget, timeout_ms in ((5000000, 30000), (777777, 30000), (5000000, 50)):
+            d = machine()
+            for _ in range(400):
+                r = d.advance(budget, timeout_ms)
+                if r['status'] not in ('budget', 'timeout'):
+                    break
+            results.append((r['status'], r['fault']['address'], r['instructions'],
+                            r['exceptions']['total_events'], r['registers']['pc']))
+        self.assertEqual(results[0][:2], ('memory_fault', '0x402001a8'))
+        self.assertEqual(results.count(results[0]), 3, results)
 
 
 if __name__ == '__main__':

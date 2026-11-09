@@ -75,7 +75,7 @@ class BootWorker(threading.Thread):
                         target.write_text(json.dumps(machine.report(), ensure_ascii=False, indent=2), encoding='utf-8')
                         notice = f'Отчёт: {target}'
                     if running:
-                        report = machine.advance(30000, 300)
+                        report = machine.advance(5000000, 300)
                         if report['status'] not in ('timeout', 'budget'):
                             running = False
                     if action or was_running or machine.status in machine.FAULTS:
