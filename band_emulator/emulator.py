@@ -106,7 +106,7 @@ class Emulator:
             self.cpu.mmio_map(page, 4096, self._mmio_read, page, self._mmio_write, page)
         self.cpu.reg_write(arm.UC_ARM_REG_SP, sp)
         self.cpu.reg_write(arm.UC_ARM_REG_LR, self.return_address | 1)
-        self.cpu.hook_add(UC_HOOK_CODE, self._instruction)
+        self._code_hook = self.cpu.hook_add(UC_HOOK_CODE, self._instruction)
         self.cpu.hook_add(UC_HOOK_MEM_INVALID, self._invalid_memory)
         self.cpu.hook_add(UC_HOOK_INTR, self._interrupt)
 

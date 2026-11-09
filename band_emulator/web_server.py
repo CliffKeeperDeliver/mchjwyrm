@@ -51,7 +51,7 @@ class MachineSession(threading.Thread):
                 'virtual_clock', 'virtual_factory_sector', 'gpio', 'limitations')
         state = {key: r.get(key) for key in keys}
         state.update(ready=True, running=self.running, version=self.version,
-                     console=r['console'][-24000:], trace=r['trace_tail'],
+                     console=r['console'][-24000:], trace=r['trace_tail'], next=r.get('next_instructions', []),
                      services=r['hle_replacements'][-16:], notice=notice,
                      exception_count=r['exceptions']['total_events'])
         with self.lock:
@@ -161,7 +161,9 @@ class MachineSession(threading.Thread):
                         self.publish(str(error))
                         future.set_result(dict(ok=False, error=str(error)))
                 if self.running:
-                    r = self.machine.advance(20000, 250)
+                    # The 250 ms deadline bounds command latency; the budget
+                    # only caps a slice now that execution runs in chunks.
+                    r = self.machine.advance(5000000, 250)
                     self.running = r['status'] in ('budget', 'timeout')
                     self.publish(report=r)
         except Exception as error:
