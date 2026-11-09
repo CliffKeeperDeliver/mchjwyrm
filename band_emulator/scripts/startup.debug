@@ -1,0 +1,19 @@
+# Run from the workspace root. All actions affect only emulated memory.
+save power_on
+step
+step
+break 0x0c1012cc
+run
+disasm 0x0c1012cc 6
+delete 0x0c1012cc
+run
+report band_emulator/results/debug-startup-first-fault.json
+# Explicitly substitute the first unknown peripheral register with storage.
+model 0x4008005c 0
+run
+x 0x2005c000 64
+save vector_table_ready
+report band_emulator/results/debug-startup-vectors.json
+restore power_on
+report band_emulator/results/debug-startup-restored.json
+quit

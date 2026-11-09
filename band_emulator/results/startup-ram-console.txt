@@ -1,0 +1,390 @@
+Band 9 / Cortex-M33 debugger. Stock image loaded. Type help.
+ready: PC=0x0c100010; attempted instructions=0
+ready: PC=0x0c100010; attempted instructions=0
+{
+  "registers": {
+    "VTOR": "0x0",
+    "SCR": "0x0",
+    "CCR": "0x0",
+    "SHCSR": "0x0",
+    "CPACR": "0x0"
+  },
+  "system_priorities": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "irq_priorities": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "irq_count": 78,
+  "enabled": [
+    "0x0",
+    "0x0",
+    "0x0"
+  ],
+  "pending": [
+    "0x0",
+    "0x0",
+    "0x0"
+  ],
+  "ready_irqs": [],
+  "limitations": [
+    "Initial configuration values are zero for this experiment, not verified chip reset values.",
+    "78 external IRQs inferred from the 94-entry startup table; not a verified hardware inventory.",
+    "All 8 priority bits retained; implemented priority width is not established.",
+    "No exception entry/return, preemption, security banking, timer or CPU trap/FPU permission enforcement.",
+    "Enabled pending interrupts stop execution before the next instruction, even if CPU-masked."
+  ]
+}
+[
+  {
+    "base": "0x7ffa000",
+    "registers": {
+      "0x0": "0x0",
+      "0x8": "0x0"
+    },
+    "commands": {
+      "invalidate_all": 0,
+      "clean_invalidate_all": 0
+    },
+    "limitations": [
+      "Experimental cold start with zeroed control registers.",
+      "Coherent backing memory; no cache lines, dirty data, bus effects or timing.",
+      "Only observed configuration and whole-cache commands are implemented.",
+      "BES-family layout corroborates firmware analysis; chip identity/variant not proven."
+    ]
+  },
+  {
+    "base": "0x7ffc000",
+    "registers": {
+      "0x0": "0x0",
+      "0x8": "0x0"
+    },
+    "commands": {
+      "invalidate_all": 0,
+      "clean_invalidate_all": 0
+    },
+    "limitations": [
+      "Experimental cold start with zeroed control registers.",
+      "Coherent backing memory; no cache lines, dirty data, bus effects or timing.",
+      "Only observed configuration and whole-cache commands are implemented.",
+      "BES-family layout corroborates firmware analysis; chip identity/variant not proven."
+    ]
+  }
+]
+{
+  "chip_id_register": "0xd0000",
+  "revision": 13,
+  "ram_cfg": "0x0",
+  "identity_verified": false,
+  "limitations": [
+    "CHIP_ID is supplied explicitly for branch exploration, not read from the bracelet.",
+    "RAM_CFG starts at zero and only observed EMA bits 0..2 are supported.",
+    "No electrical RAM effects, clocks, resets, timers or other AON registers."
+  ]
+}
+{
+  "data_base": "0x20000000",
+  "execution_base": "0x200000",
+  "size": "0x160000",
+  "shared_backing": true,
+  "execution_alias_writable": false,
+  "limitations": [
+    "Experimental coherent SRAM mirror; no MPU, bus or cache timing.",
+    "Data view remains non-executable; execution view is read-only."
+  ]
+}
+memory_fault: PC=0x00260092; attempted instructions=83984
+{"pc": "0x260092", "access": "unmapped_write", "address": "0x40086008", "size": 4, "value": "0xffffffff", "instruction_state_rolled_back": true}
+Saved: band_emulator\results\debug-startup-revision13.json
+ready: PC=0x0c100010; attempted instructions=0
+{
+  "registers": {
+    "VTOR": "0x0",
+    "SCR": "0x0",
+    "CCR": "0x0",
+    "SHCSR": "0x0",
+    "CPACR": "0x0"
+  },
+  "system_priorities": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "irq_priorities": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "irq_count": 78,
+  "enabled": [
+    "0x0",
+    "0x0",
+    "0x0"
+  ],
+  "pending": [
+    "0x0",
+    "0x0",
+    "0x0"
+  ],
+  "ready_irqs": [],
+  "limitations": [
+    "Initial configuration values are zero for this experiment, not verified chip reset values.",
+    "78 external IRQs inferred from the 94-entry startup table; not a verified hardware inventory.",
+    "All 8 priority bits retained; implemented priority width is not established.",
+    "No exception entry/return, preemption, security banking, timer or CPU trap/FPU permission enforcement.",
+    "Enabled pending interrupts stop execution before the next instruction, even if CPU-masked."
+  ]
+}
+[
+  {
+    "base": "0x7ffa000",
+    "registers": {
+      "0x0": "0x0",
+      "0x8": "0x0"
+    },
+    "commands": {
+      "invalidate_all": 0,
+      "clean_invalidate_all": 0
+    },
+    "limitations": [
+      "Experimental cold start with zeroed control registers.",
+      "Coherent backing memory; no cache lines, dirty data, bus effects or timing.",
+      "Only observed configuration and whole-cache commands are implemented.",
+      "BES-family layout corroborates firmware analysis; chip identity/variant not proven."
+    ]
+  },
+  {
+    "base": "0x7ffc000",
+    "registers": {
+      "0x0": "0x0",
+      "0x8": "0x0"
+    },
+    "commands": {
+      "invalidate_all": 0,
+      "clean_invalidate_all": 0
+    },
+    "limitations": [
+      "Experimental cold start with zeroed control registers.",
+      "Coherent backing memory; no cache lines, dirty data, bus effects or timing.",
+      "Only observed configuration and whole-cache commands are implemented.",
+      "BES-family layout corroborates firmware analysis; chip identity/variant not proven."
+    ]
+  }
+]
+{
+  "chip_id_register": "0xe0000",
+  "revision": 14,
+  "ram_cfg": "0x0",
+  "identity_verified": false,
+  "limitations": [
+    "CHIP_ID is supplied explicitly for branch exploration, not read from the bracelet.",
+    "RAM_CFG starts at zero and only observed EMA bits 0..2 are supported.",
+    "No electrical RAM effects, clocks, resets, timers or other AON registers."
+  ]
+}
+{
+  "data_base": "0x20000000",
+  "execution_base": "0x200000",
+  "size": "0x160000",
+  "shared_backing": true,
+  "execution_alias_writable": false,
+  "limitations": [
+    "Experimental coherent SRAM mirror; no MPU, bus or cache timing.",
+    "Data view remains non-executable; execution view is read-only."
+  ]
+}
+memory_fault: PC=0x00260092; attempted instructions=83985
+{"pc": "0x260092", "access": "unmapped_write", "address": "0x40086008", "size": 4, "value": "0xffffffff", "instruction_state_rolled_back": true}
+00260088: 4ff0ff33   mov.w r3, #-1
+0026008c: 264a       ldr r2, [pc, #0x98]
+0026008e: 2de9f04f   push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+00260092: 9360       str r3, [r2, #8]
+00260094: 0023       movs r3, #0
+00260096: 4ff00f0c   mov.w ip, #0xf
+0026009a: dff89ce0   ldr.w lr, [pc, #0x9c]
+0026009e: 234f       ldr r7, [pc, #0x8c]
+002600a0: dff89880   ldr.w r8, [pc, #0x98]
+002600a4: dff89890   ldr.w sb, [pc, #0x98]
+002600a8: dff898a0   ldr.w sl, [pc, #0x98]
+002600ac: c2f8c430   str.w r3, [r2, #0xc4]
+memory_fault: PC=0x00260092; attempted instructions=83985
+{"pc": "0x260092", "access": "unmapped_write", "address": "0x40086008", "size": 4, "value": "0xffffffff", "instruction_state_rolled_back": true}
+Saved: band_emulator\results\debug-startup-revision14.json
+ready: PC=0x0c100010; attempted instructions=0
+Saved: band_emulator\results\debug-startup-ram-restored.json
+memory_fault: PC=0x00260092; attempted instructions=83985
+{"pc": "0x260092", "access": "unmapped_write", "address": "0x40086008", "size": 4, "value": "0xffffffff", "instruction_state_rolled_back": true}
+memory_fault: PC=0x00260092; attempted instructions=83985
+{"pc": "0x260092", "access": "unmapped_write", "address": "0x40086008", "size": 4, "value": "0xffffffff", "instruction_state_rolled_back": true}

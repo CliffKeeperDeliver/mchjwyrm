@@ -1,0 +1,16 @@
+test_breakpoint_on_hle_then_step_resumes (test_boot.BootUnitTests.test_breakpoint_on_hle_then_step_resumes) ... ok
+test_exception_roundtrip_msp_and_psp_with_fp_and_alignment (test_boot.BootUnitTests.test_exception_roundtrip_msp_and_psp_with_fp_and_alignment) ... ok
+test_hle_rejects_invalid_return_and_rtc_buffer (test_boot.BootUnitTests.test_hle_rejects_invalid_return_and_rtc_buffer) ... ok
+test_invalid_exception_return_is_rejected_without_register_changes (test_boot.BootUnitTests.test_invalid_exception_return_is_rejected_without_register_changes) ... ok
+test_oneshot_timer_latches_and_clears_interrupt (test_boot.BootUnitTests.test_oneshot_timer_latches_and_clears_interrupt) ... ok
+test_profile_is_bound_to_stock_build_and_mapping (test_boot.BootUnitTests.test_profile_is_bound_to_stock_build_and_mapping) ... ok
+test_psram_aliases_and_bounds (test_boot.BootUnitTests.test_psram_aliases_and_bounds) ... ok
+test_snapshot_covers_psram_devices_and_exception_state (test_boot.BootUnitTests.test_snapshot_covers_psram_devices_and_exception_state) ... ok
+test_systick_and_irq_masking (test_boot.BootUnitTests.test_systick_and_irq_masking) ... ok
+test_terminal_fault_cannot_be_blindly_resumed (test_boot.BootUnitTests.test_terminal_fault_cannot_be_blindly_resumed) ... ok
+test_stock_kernel_creates_tasks_switches_context_and_replays (test_boot.StockBootTests.test_stock_kernel_creates_tasks_switches_context_and_replays) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 26.710s
+
+OK

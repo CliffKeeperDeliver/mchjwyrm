@@ -1,0 +1,9 @@
+Stage: internal_runtime_relocation 0xc1002f2
+Stage: external_runtime_relocation 0xc10024c
+Stage: c_runtime_entry 0xc51aa30
+system power on....
+Stage: kernel_entry 0xc13fa14
+Stage: system_heaps_initialized 0xc13faa0
+Stage: kernel_exception_handlers_configured 0xc13fbdc
+memory_fault 609797 0x26039e {'pc': '0x26039e', 'access': 'unmapped_write', 'address': '0x40009000', 'size': 4, 'value': '0x0'}
+Elapsed seconds: 16.73

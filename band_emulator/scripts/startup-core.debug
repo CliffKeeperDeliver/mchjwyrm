@@ -1,0 +1,14 @@
+# Reproducible startup with explicitly enabled experimental peripherals.
+save power_on
+core on
+cache on
+model 0x4008005c 0
+run
+status
+disasm
+save chip_register
+report band_emulator/results/debug-startup-core.json
+restore power_on
+report band_emulator/results/debug-startup-core-restored.json
+restore chip_register
+status

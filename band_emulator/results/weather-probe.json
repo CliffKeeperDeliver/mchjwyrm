@@ -1,0 +1,160 @@
+{
+  "profile": "Band 9 Global 2.3.98 — experimental function harness",
+  "image_sha256": "7c0115d92f7aa5d22dcb3f9a1ff0614904d736609d2d29eebc32f9ab3f7ebab1",
+  "cpu": "Cortex-M33 (Unicorn)",
+  "status": "returned",
+  "error": null,
+  "fault": null,
+  "entry_offset": "0x22d834",
+  "entry_address": "0xc32d834",
+  "instructions": 19,
+  "max_instructions": 10000,
+  "timeout_ms": 2000,
+  "registers": {
+    "r0": "0x0",
+    "r1": "0x0",
+    "r2": "0x0",
+    "r3": "0x0",
+    "r4": "0x0",
+    "r5": "0x0",
+    "r6": "0x0",
+    "r7": "0x0",
+    "r8": "0x0",
+    "r9": "0x0",
+    "r10": "0x0",
+    "r11": "0x0",
+    "r12": "0x0",
+    "sp": "0x2015fe80",
+    "lr": "0xc4db109",
+    "pc": "0x10000000",
+    "xpsr": "0x41000000"
+  },
+  "mmio_model": "explicit 32-bit read/write storage; real hardware behavior NOT validated",
+  "mmio_registers": {},
+  "mmio_event_count": 0,
+  "mmio_events": [],
+  "trace_tail": [
+    {
+      "address": "0xc32d834",
+      "offset": "0x22d834",
+      "bytes": "80b5",
+      "instruction": "push {r7, lr}"
+    },
+    {
+      "address": "0xc32d836",
+      "offset": "0x22d836",
+      "bytes": "b0f87c31",
+      "instruction": "ldrh.w r3, [r0, #0x17c]"
+    },
+    {
+      "address": "0xc32d83a",
+      "offset": "0x22d83a",
+      "bytes": "00af",
+      "instruction": "add r7, sp, #0"
+    },
+    {
+      "address": "0xc32d83c",
+      "offset": "0x22d83c",
+      "bytes": "53b1",
+      "instruction": "cbz r3, #0xc32d854"
+    },
+    {
+      "address": "0xc32d854",
+      "offset": "0x22d854",
+      "bytes": "b0f9ca00",
+      "instruction": "ldrsh.w r0, [r0, #0xca]"
+    },
+    {
+      "address": "0xc32d858",
+      "offset": "0x22d858",
+      "bytes": "adf152fc",
+      "instruction": "bl #0xc4db100"
+    },
+    {
+      "address": "0xc4db100",
+      "offset": "0x3db100",
+      "bytes": "80b5",
+      "instruction": "push {r7, lr}"
+    },
+    {
+      "address": "0xc4db102",
+      "offset": "0x3db102",
+      "bytes": "00af",
+      "instruction": "add r7, sp, #0"
+    },
+    {
+      "address": "0xc4db104",
+      "offset": "0x3db104",
+      "bytes": "52f644fb",
+      "instruction": "bl #0xc32d790"
+    },
+    {
+      "address": "0xc32d790",
+      "offset": "0x22d790",
+      "bytes": "80b5",
+      "instruction": "push {r7, lr}"
+    },
+    {
+      "address": "0xc32d792",
+      "offset": "0x22d792",
+      "bytes": "0f4b",
+      "instruction": "ldr r3, [pc, #0x3c]"
+    },
+    {
+      "address": "0xc32d794",
+      "offset": "0x22d794",
+      "bytes": "00af",
+      "instruction": "add r7, sp, #0"
+    },
+    {
+      "address": "0xc32d796",
+      "offset": "0x22d796",
+      "bytes": "1b7a",
+      "instruction": "ldrb r3, [r3, #8]"
+    },
+    {
+      "address": "0xc32d798",
+      "offset": "0x22d798",
+      "bytes": "cbb1",
+      "instruction": "cbz r3, #0xc32d7ce"
+    },
+    {
+      "address": "0xc32d7ce",
+      "offset": "0x22d7ce",
+      "bytes": "80bd",
+      "instruction": "pop {r7, pc}"
+    },
+    {
+      "address": "0xc4db108",
+      "offset": "0x3db108",
+      "bytes": "00b2",
+      "instruction": "sxth r0, r0"
+    },
+    {
+      "address": "0xc4db10a",
+      "offset": "0x3db10a",
+      "bytes": "80bd",
+      "instruction": "pop {r7, pc}"
+    },
+    {
+      "address": "0xc32d85c",
+      "offset": "0x22d85c",
+      "bytes": "f9e7",
+      "instruction": "b #0xc32d852"
+    },
+    {
+      "address": "0xc32d852",
+      "offset": "0x22d852",
+      "bytes": "80bd",
+      "instruction": "pop {r7, pc}"
+    }
+  ],
+  "assumptions": [
+    "Image base inferred from startup literal at file offset 0x64: 0x0c100015 points to Thumb entry at offset 0x14.",
+    "Stack pointer comes from startup literal at offset 0x68. RAM extent is an experimental model, not a verified complete memory map.",
+    "No flash aliases, ROM functions, interrupt controller, timers, display, Bluetooth or sensors are modeled.",
+    "Demo models a single 32-bit register as plain read/write storage; its real hardware side effects are unknown.",
+    "A returned function is not evidence that the operating system boots or that modified firmware can be flashed."
+  ],
+  "full_device_emulation": false
+}

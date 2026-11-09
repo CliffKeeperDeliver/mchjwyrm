@@ -1,0 +1,2912 @@
+{
+  "strings": [
+    [
+      5332941,
+      "/data/app/weather"
+    ],
+    [
+      5333061,
+      "[%s] %s: weather_read_data %d, %d"
+    ],
+    [
+      5342629,
+      "weather_new_day_enable"
+    ],
+    [
+      5430968,
+      "open_weather_app.setting"
+    ],
+    [
+      5504996,
+      "turning_word.weather"
+    ],
+    [
+      5505762,
+      "[%s] %s: show_sleep_info = %d all_weather_data_ok = %d "
+    ],
+    [
+      5507804,
+      "app_weather_get_local_temperature"
+    ],
+    [
+      5517343,
+      "weather.common"
+    ],
+    [
+      5517377,
+      "i_clear.weather"
+    ],
+    [
+      5517393,
+      "i_pcloudy.weather"
+    ],
+    [
+      5517411,
+      "i_native.weather"
+    ],
+    [
+      5517428,
+      "i_srain.weather"
+    ],
+    [
+      5517444,
+      "i_hail.weather"
+    ],
+    [
+      5517459,
+      "i_mrain.weather"
+    ],
+    [
+      5517475,
+      "i_hrain.weather"
+    ],
+    [
+      5517491,
+      "i_rainsnow.weather"
+    ],
+    [
+      5517510,
+      "i_fzrain.weather"
+    ],
+    [
+      5517527,
+      "i_thunder.weather"
+    ],
+    [
+      5517545,
+      "i_hsnow.weather"
+    ],
+    [
+      5517561,
+      "i_msnow.weather"
+    ],
+    [
+      5517577,
+      "i_ssnow.weather"
+    ],
+    [
+      5517593,
+      "i_sand.weather"
+    ],
+    [
+      5517608,
+      "i_storm.weather"
+    ],
+    [
+      5517624,
+      "i_haze.weather"
+    ],
+    [
+      5517639,
+      "i_fog.weather"
+    ],
+    [
+      5517949,
+      "weatherCondition"
+    ],
+    [
+      5519310,
+      "/resource/app/weather/main/alert_tip.bin"
+    ],
+    [
+      5519351,
+      "alert_tip.weather"
+    ],
+    [
+      5519369,
+      "ignore.weather"
+    ],
+    [
+      5519423,
+      "/data/app/weather/database.db"
+    ],
+    [
+      5519453,
+      "weather_async_work"
+    ],
+    [
+      5519533,
+      "[%s] %s: send_weather_request "
+    ],
+    [
+      5519675,
+      "[%s] %s: get city list weather."
+    ],
+    [
+      5519997,
+      "/resource/app/weather/main/yun.bin"
+    ],
+    [
+      5520032,
+      "two_tip_page.weather"
+    ],
+    [
+      5520053,
+      "five_tip_page.weather"
+    ],
+    [
+      5520336,
+      "[%s] %s: weather data is none."
+    ],
+    [
+      5520516,
+      "/resource/app/weather/main/p0.bin"
+    ],
+    [
+      5520550,
+      "data_loading.weather"
+    ],
+    [
+      5520571,
+      "/resource/app/weather/main/i_clear.bin"
+    ],
+    [
+      5520610,
+      "/resource/app/weather/main/i_nclear.bin"
+    ],
+    [
+      5520650,
+      "/resource/app/weather/main/i_npcloudy.bin"
+    ],
+    [
+      5520692,
+      "/resource/app/weather/main/i_pcloudy.bin"
+    ],
+    [
+      5520733,
+      "/resource/app/weather/main/i_fog.bin"
+    ],
+    [
+      5520770,
+      "/resource/app/weather/main/i_srain.bin"
+    ],
+    [
+      5520809,
+      "/resource/app/weather/main/i_hail.bin"
+    ],
+    [
+      5520847,
+      "/resource/app/weather/main/i_mrain.bin"
+    ],
+    [
+      5520886,
+      "/resource/app/weather/main/i_hrain.bin"
+    ],
+    [
+      5520925,
+      "/resource/app/weather/main/i_rainsnow.bin"
+    ],
+    [
+      5520967,
+      "/resource/app/weather/main/i_freezingrain.bin"
+    ],
+    [
+      5521013,
+      "/resource/app/weather/main/i_thunder.bin"
+    ],
+    [
+      5521054,
+      "/resource/app/weather/main/i_hsnow.bin"
+    ],
+    [
+      5521093,
+      "/resource/app/weather/main/i_msnow.bin"
+    ],
+    [
+      5521132,
+      "/resource/app/weather/main/i_ssnow.bin"
+    ],
+    [
+      5521171,
+      "/resource/app/weather/main/i_sand.bin"
+    ],
+    [
+      5521209,
+      "/resource/app/weather/main/i_storm.bin"
+    ],
+    [
+      5521248,
+      "/resource/app/weather/main/i_haze.bin"
+    ],
+    [
+      5521286,
+      "/resource/app/weather/main/i_nfog.bin"
+    ],
+    [
+      5521324,
+      "/resource/app/weather/main/i_native.bin"
+    ],
+    [
+      5521364,
+      "reverse_city.weather"
+    ],
+    [
+      5521412,
+      "/resource/app/weather/main/location.bin"
+    ],
+    [
+      5521452,
+      "add_city.weather"
+    ],
+    [
+      5523194,
+      "[%s] %s: check Weather_WeatherID_LATEST_WEATHER error"
+    ],
+    [
+      5523608,
+      "alert.weather"
+    ],
+    [
+      5523622,
+      "/resource/app/weather/launcher.bin"
+    ],
+    [
+      5523777,
+      "[%s] %s: check Weather_WeatherID_DAILY_FORECAST error"
+    ],
+    [
+      5523896,
+      "[%s] %s: weather:%d-%d, temp:%d-%d;"
+    ],
+    [
+      5523996,
+      "[%s] %s: check Weather_WeatherID_HOURLY_FORECAST error"
+    ],
+    [
+      5524079,
+      "[%s] %s: check Weather_WeatherID_SET_PRESSURE error"
+    ],
+    [
+      5524185,
+      "[%s] %s: return weather citykey list;"
+    ],
+    [
+      5524224,
+      "[%s] %s: check Weather_WeatherID_UPDATE_CITY_KEYS error"
+    ],
+    [
+      5524377,
+      "[%s] %s: check Weather_WeatherID_ADD_CITY_KEY error"
+    ],
+    [
+      5524560,
+      "[%s] %s: check Weather_WeatherID_REMOVE_CITY_KEYS error;"
+    ],
+    [
+      5524766,
+      "[%s] %s: check Weather_WeatherID_SET_CONFIG error"
+    ],
+    [
+      5525002,
+      "/resource/app/weather/main/alert_bg.bin"
+    ],
+    [
+      5525042,
+      "/resource/app/weather/main/alert.bin"
+    ],
+    [
+      5525172,
+      "weather page abnormal reminder"
+    ],
+    [
+      5525212,
+      "com.xiaomi.miwear.weather"
+    ],
+    [
+      5525979,
+      "renew_pressure_weather"
+    ],
+    [
+      5526422,
+      "renew_latest_weather"
+    ],
+    [
+      5526646,
+      "weather_status_code_switch"
+    ],
+    [
+      5526673,
+      "weather_simple_status_code_switch"
+    ],
+    [
+      5526905,
+      "app_weather_data_is_valid"
+    ],
+    [
+      5527036,
+      "weather_alert_reminder_show"
+    ],
+    [
+      5527091,
+      "send_weather_request"
+    ],
+    [
+      5527129,
+      "get_weather_data_by_wcn"
+    ],
+    [
+      5549024,
+      "/resource/app/weather/widget/sb_nclear.bin"
+    ],
+    [
+      5549067,
+      "/resource/app/weather/widget/sb_srain.bin"
+    ],
+    [
+      5549109,
+      "/resource/app/weather/widget/sb_nsrain.bin"
+    ],
+    [
+      5549152,
+      "/resource/app/weather/widget/sb_mrain.bin"
+    ],
+    [
+      5549194,
+      "/resource/app/weather/widget/sb_nmrain.bin"
+    ],
+    [
+      5549237,
+      "/resource/app/weather/widget/sb_hrain.bin"
+    ],
+    [
+      5549279,
+      "/resource/app/weather/widget/sb_nhrain.bin"
+    ],
+    [
+      5549322,
+      "/resource/app/weather/widget/sb_thunder.bin"
+    ],
+    [
+      5549366,
+      "/resource/app/weather/widget/sb_nthunder.bin"
+    ],
+    [
+      5549411,
+      "/resource/app/weather/widget/sb_hsnow.bin"
+    ],
+    [
+      5549453,
+      "/resource/app/weather/widget/sb_nhsnow.bin"
+    ],
+    [
+      5549496,
+      "/resource/app/weather/widget/sb_msnow.bin"
+    ],
+    [
+      5549538,
+      "/resource/app/weather/widget/sb_nmsnow.bin"
+    ],
+    [
+      5549581,
+      "/resource/app/weather/widget/sb_ssnow.bin"
+    ],
+    [
+      5549623,
+      "/resource/app/weather/widget/sb_nssnow.bin"
+    ],
+    [
+      5549666,
+      "/resource/app/weather/widget/sb_sand.bin"
+    ],
+    [
+      5549707,
+      "/resource/app/weather/widget/sb_nsand.bin"
+    ],
+    [
+      5549749,
+      "/resource/app/weather/widget/sb_stom.bin"
+    ],
+    [
+      5549790,
+      "/resource/app/weather/widget/sb_nstom.bin"
+    ],
+    [
+      5549832,
+      "/resource/app/weather/widget/sb_haze.bin"
+    ],
+    [
+      5549873,
+      "/resource/app/weather/widget/sb_nhaze.bin"
+    ],
+    [
+      5549915,
+      "/resource/app/weather/widget/sb_fog.bin"
+    ],
+    [
+      5549955,
+      "/resource/app/weather/widget/sb_nfog.bin"
+    ],
+    [
+      5549996,
+      "/resource/app/weather/widget/sb_clear.bin"
+    ],
+    [
+      5550038,
+      "/resource/app/weather/widget/sb_native.bin"
+    ],
+    [
+      5550081,
+      "/resource/app/weather/widget/gen2/si_nclear.bin"
+    ],
+    [
+      5550129,
+      "/resource/app/weather/widget/si_nclear.bin"
+    ],
+    [
+      5550172,
+      "/resource/app/weather/widget/gen2/si_clear.bin"
+    ],
+    [
+      5550219,
+      "/resource/app/weather/widget/si_clear.bin"
+    ],
+    [
+      5550261,
+      "/resource/app/weather/widget/gen2/si_npcloudy.bin"
+    ],
+    [
+      5550311,
+      "/resource/app/weather/widget/si_npcloudy.bin"
+    ],
+    [
+      5550356,
+      "/resource/app/weather/widget/gen2/si_pcloudy.bin"
+    ],
+    [
+      5550405,
+      "/resource/app/weather/widget/si_pcloudy.bin"
+    ],
+    [
+      5550449,
+      "/resource/app/weather/widget/gen2/si_native.bin"
+    ],
+    [
+      5550497,
+      "/resource/app/weather/widget/si_native.bin"
+    ],
+    [
+      5550540,
+      "/resource/app/weather/widget/gen2/si_srain.bin"
+    ],
+    [
+      5550587,
+      "/resource/app/weather/widget/si_srain.bin"
+    ],
+    [
+      5550629,
+      "/resource/app/weather/widget/gen2/si_hail.bin"
+    ],
+    [
+      5550675,
+      "/resource/app/weather/widget/si_hail.bin"
+    ],
+    [
+      5550716,
+      "/resource/app/weather/widget/gen2/si_mrain.bin"
+    ],
+    [
+      5550763,
+      "/resource/app/weather/widget/si_mrain.bin"
+    ],
+    [
+      5550805,
+      "/resource/app/weather/widget/gen2/si_hrain.bin"
+    ],
+    [
+      5550852,
+      "/resource/app/weather/widget/si_hrain.bin"
+    ],
+    [
+      5550894,
+      "/resource/app/weather/widget/gen2/si_rainsnow.bin"
+    ],
+    [
+      5550944,
+      "/resource/app/weather/widget/si_rainsnow.bin"
+    ],
+    [
+      5550989,
+      "/resource/app/weather/widget/gen2/si_icerain.bin"
+    ],
+    [
+      5551038,
+      "/resource/app/weather/widget/si_icerain.bin"
+    ],
+    [
+      5551082,
+      "/resource/app/weather/widget/gen2/si_thunder.bin"
+    ],
+    [
+      5551131,
+      "/resource/app/weather/widget/si_thunder.bin"
+    ],
+    [
+      5551175,
+      "/resource/app/weather/widget/gen2/si_hsnow.bin"
+    ],
+    [
+      5551222,
+      "/resource/app/weather/widget/si_hsnow.bin"
+    ],
+    [
+      5551264,
+      "/resource/app/weather/widget/gen2/si_msnow.bin"
+    ],
+    [
+      5551311,
+      "/resource/app/weather/widget/si_msnow.bin"
+    ],
+    [
+      5551353,
+      "/resource/app/weather/widget/gen2/si_ssnow.bin"
+    ],
+    [
+      5551400,
+      "/resource/app/weather/widget/si_ssnow.bin"
+    ],
+    [
+      5551442,
+      "/resource/app/weather/widget/gen2/si_sand.bin"
+    ],
+    [
+      5551488,
+      "/resource/app/weather/widget/si_sand.bin"
+    ],
+    [
+      5551529,
+      "/resource/app/weather/widget/gen2/si_stom.bin"
+    ],
+    [
+      5551575,
+      "/resource/app/weather/widget/si_stom.bin"
+    ],
+    [
+      5551616,
+      "/resource/app/weather/widget/gen2/si_haze.bin"
+    ],
+    [
+      5551662,
+      "/resource/app/weather/widget/si_haze.bin"
+    ],
+    [
+      5551703,
+      "/resource/app/weather/widget/gen2/si_nfog.bin"
+    ],
+    [
+      5551749,
+      "/resource/app/weather/widget/si_nfog.bin"
+    ],
+    [
+      5551790,
+      "/resource/app/weather/widget/gen2/si_fog.bin"
+    ],
+    [
+      5551835,
+      "/resource/app/weather/widget/si_fog.bin"
+    ],
+    [
+      5551875,
+      "/resource/app/weather/widget/widget_light11.bin"
+    ],
+    [
+      5551923,
+      "/resource/app/weather/widget/widget_dark11.bin"
+    ],
+    [
+      5551985,
+      "nodata.weather"
+    ],
+    [
+      5552005,
+      "weather_detail"
+    ],
+    [
+      5552107,
+      "one_tip_page.weather"
+    ],
+    [
+      5552128,
+      "four_tip_page.weather"
+    ],
+    [
+      5552181,
+      "overdue_tip.weather"
+    ],
+    [
+      5554358,
+      "persist.first_into_weather"
+    ],
+    [
+      5554458,
+      "weathercn"
+    ],
+    [
+      5554468,
+      "/resource/app/weather/main/p2.bin"
+    ],
+    [
+      5554530,
+      "data_overdue.weather"
+    ],
+    [
+      5554551,
+      "/resource/app/weather/main/icon_overdue.bin"
+    ],
+    [
+      5554602,
+      "/resource/app/weather/main/line.bin"
+    ],
+    [
+      5554638,
+      "sunrise.weather"
+    ],
+    [
+      5554654,
+      "sunset.weather"
+    ],
+    [
+      5554669,
+      "wind_direct.weather"
+    ],
+    [
+      5554689,
+      "hum.weather"
+    ],
+    [
+      5554701,
+      "uvdes.weather"
+    ],
+    [
+      5554744,
+      "[%s] %s: weather_main_view == NULL"
+    ],
+    [
+      5554780,
+      "wind_info.weather"
+    ],
+    [
+      5554798,
+      "/resource/app/weather/main/overdue.bin"
+    ],
+    [
+      5555743,
+      "/resource/app/weather/widget/sb_mclear.bin"
+    ],
+    [
+      5555786,
+      "/resource/app/weather/widget/sb_nfclear.bin"
+    ],
+    [
+      5630246,
+      "[VAS] vas_answer_weather_start"
+    ],
+    [
+      5630278,
+      "[VAS] drawAivsAnswerWeather"
+    ],
+    [
+      5630307,
+      "[VAS] weather_icon [%d] is error!"
+    ],
+    [
+      5632158,
+      "watch.weather"
+    ],
+    [
+      6034756,
+      "[%s] %s: Not implemented weather data source: %d"
+    ],
+    [
+      6038420,
+      "update_today_weather"
+    ],
+    [
+      6039024,
+      "update_latest_weather"
+    ],
+    [
+      6039740,
+      "data_weather_register_src"
+    ],
+    [
+      6065598,
+      "weatherCurrentSunRise"
+    ],
+    [
+      6065620,
+      "weatherCurrentSunSet"
+    ],
+    [
+      6065641,
+      "weatherCurrentSunRiseHour"
+    ],
+    [
+      6065667,
+      "weatherCurrentSunRiseMinute"
+    ],
+    [
+      6065695,
+      "weatherCurrentSunSetHour"
+    ],
+    [
+      6065720,
+      "weatherCurrentSunSetMinute"
+    ],
+    [
+      6065747,
+      "weatherTemperatureUnit"
+    ],
+    [
+      6065770,
+      "weatherCurrentTemperature"
+    ],
+    [
+      6065796,
+      "weatherCurrentTemperatureFahrenheit"
+    ],
+    [
+      6065832,
+      "weatherCurrentTemperatureFeel"
+    ],
+    [
+      6065862,
+      "weatherCurrentHumidity"
+    ],
+    [
+      6065885,
+      "weatherCurrentWeather"
+    ],
+    [
+      6065907,
+      "weatherCurrentWindDirection"
+    ],
+    [
+      6065935,
+      "weatherCurrentWindAngle"
+    ],
+    [
+      6065959,
+      "weatherCurrentWindSpeed"
+    ],
+    [
+      6065983,
+      "weatherCurrentWindLevel"
+    ],
+    [
+      6066007,
+      "weatherCurrentAirQualityIndex"
+    ],
+    [
+      6066037,
+      "weatherCurrentAirQualityLevel"
+    ],
+    [
+      6066067,
+      "weatherCurrentChanceOfRain"
+    ],
+    [
+      6066094,
+      "weatherCurrentPressure"
+    ],
+    [
+      6066117,
+      "weatherCurrentVisibility"
+    ],
+    [
+      6066142,
+      "weatherCurrentUVIndex"
+    ],
+    [
+      6066164,
+      "weatherCurrentDressIndex"
+    ],
+    [
+      6066189,
+      "weatherTodayTemperatureMax"
+    ],
+    [
+      6066216,
+      "weatherTodayTemperatureMin"
+    ],
+    [
+      6066243,
+      "weatherTodayTemperatureMaxFahrenheit"
+    ],
+    [
+      6066280,
+      "weatherTodayTemperatureMinFahrenheit"
+    ],
+    [
+      6066317,
+      "weatherTomorrowTemperatureMax"
+    ],
+    [
+      6066347,
+      "weatherTomorrowTemperatureMin"
+    ],
+    [
+      6066377,
+      "weatherTomorrowTemperatureMaxFahrenheit"
+    ],
+    [
+      6066417,
+      "weatherTomorrowTemperatureMinFahrenheit"
+    ],
+    [
+      6159616,
+      "just_update.weather"
+    ],
+    [
+      6159636,
+      "%dupdate_minutes.weather"
+    ],
+    [
+      6159661,
+      "%dupdate_minute.weather"
+    ],
+    [
+      6159685,
+      "%dhour%dmin.weather"
+    ],
+    [
+      6164547,
+      "[%s] %s: draw_weather_info parm NULL"
+    ],
+    [
+      6166090,
+      "draw_weather_info"
+    ],
+    [
+      6172161,
+      "weather_write_data_async_work"
+    ],
+    [
+      6172191,
+      "weather_read_data"
+    ],
+    [
+      6215395,
+      "/resource/app/weather/icon/48/clear.bin"
+    ],
+    [
+      6215435,
+      "/resource/app/weather/icon/48/fog.bin"
+    ],
+    [
+      6215473,
+      "/resource/app/weather/icon/48/native.bin"
+    ],
+    [
+      6215514,
+      "/resource/app/weather/icon/48/srain.bin"
+    ],
+    [
+      6215554,
+      "/resource/app/weather/icon/48/hail.bin"
+    ],
+    [
+      6215593,
+      "/resource/app/weather/icon/48/mrain.bin"
+    ],
+    [
+      6215633,
+      "/resource/app/weather/icon/48/hrain.bin"
+    ],
+    [
+      6215673,
+      "/resource/app/weather/icon/48/rainsnow.bin"
+    ],
+    [
+      6215716,
+      "/resource/app/weather/icon/48/icerain.bin"
+    ],
+    [
+      6215758,
+      "/resource/app/weather/icon/48/thunder.bin"
+    ],
+    [
+      6215800,
+      "/resource/app/weather/icon/48/hsnow.bin"
+    ],
+    [
+      6215840,
+      "/resource/app/weather/icon/48/msnow.bin"
+    ],
+    [
+      6215880,
+      "/resource/app/weather/icon/48/ssnow.bin"
+    ],
+    [
+      6215920,
+      "/resource/app/weather/icon/48/sand.bin"
+    ],
+    [
+      6215959,
+      "/resource/app/weather/icon/48/storm.bin"
+    ],
+    [
+      6215999,
+      "/resource/app/weather/icon/48/haze.bin"
+    ],
+    [
+      6216038,
+      "/resource/app/weather/icon/48/pcloudy.bin"
+    ],
+    [
+      6216080,
+      "/resource/app/weather/icon/80/native.bin"
+    ],
+    [
+      6216121,
+      "/resource/app/weather/icon/80/nclear.bin"
+    ],
+    [
+      6216162,
+      "/resource/app/weather/icon/80/clear.bin"
+    ],
+    [
+      6216202,
+      "/resource/app/weather/icon/80/npcloudy.bin"
+    ],
+    [
+      6216245,
+      "/resource/app/weather/icon/80/pcloudy.bin"
+    ],
+    [
+      6216287,
+      "/resource/app/weather/icon/80/srain.bin"
+    ],
+    [
+      6216327,
+      "/resource/app/weather/icon/80/hail.bin"
+    ],
+    [
+      6216366,
+      "/resource/app/weather/icon/80/mrain.bin"
+    ],
+    [
+      6216406,
+      "/resource/app/weather/icon/80/hrain.bin"
+    ],
+    [
+      6216446,
+      "/resource/app/weather/icon/80/rainsnow.bin"
+    ],
+    [
+      6216489,
+      "/resource/app/weather/icon/80/icerain.bin"
+    ],
+    [
+      6216531,
+      "/resource/app/weather/icon/80/thunder.bin"
+    ],
+    [
+      6216573,
+      "/resource/app/weather/icon/80/hsnow.bin"
+    ],
+    [
+      6216613,
+      "/resource/app/weather/icon/80/msnow.bin"
+    ],
+    [
+      6216653,
+      "/resource/app/weather/icon/80/ssnow.bin"
+    ],
+    [
+      6216693,
+      "/resource/app/weather/icon/80/sand.bin"
+    ],
+    [
+      6216732,
+      "/resource/app/weather/icon/80/storm.bin"
+    ],
+    [
+      6216772,
+      "/resource/app/weather/icon/80/haze.bin"
+    ],
+    [
+      6216811,
+      "/resource/app/weather/icon/80/nfog.bin"
+    ],
+    [
+      6216850,
+      "/resource/app/weather/icon/80/fog.bin"
+    ],
+    [
+      6216888,
+      "/resource/app/weather/icon/80/unknow.bin"
+    ]
+  ],
+  "resources": [
+    {
+      "path": "/weather/launcher.bin",
+      "type": 2,
+      "size": 11028,
+      "header_offset": 10546560,
+      "data_offset": 10546592,
+      "executable": true,
+      "sha256": "8600ecfd8338862d9578f808267a12b092779bf96c782f7bba5cdabef4b2856c",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_freezingrain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10557664,
+      "data_offset": 10557712,
+      "executable": false,
+      "sha256": "4ecaa0fa9e5299aeab7fb47016faf85e3613886d8eb8b0f7ae5be4ab65b32ac7",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/overdue.bin",
+      "type": 2,
+      "size": 3836,
+      "header_offset": 10561088,
+      "data_offset": 10561120,
+      "executable": false,
+      "sha256": "550047e9808a4ac0d2c8707d1ab17986f9507eee7a656c2c1e49eae62f68e2ab",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_pcloudy.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10564992,
+      "data_offset": 10565024,
+      "executable": false,
+      "sha256": "98edf6bd94a431c7d2128937309181578110ae6c3d048e86cb5b1a514512ef17",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_hail.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10568368,
+      "data_offset": 10568400,
+      "executable": false,
+      "sha256": "9ec9de6c02c4a558f99c1e398d4b1817e6f431785122fff826cf5a41ec7ae61b",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_nfog.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10571744,
+      "data_offset": 10571776,
+      "executable": false,
+      "sha256": "0c1b907cfdc7e985b40085c404df088f3a01f1d30c57219bc034b9e53ad3e673",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_nnative.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10575120,
+      "data_offset": 10575152,
+      "executable": false,
+      "sha256": "99932ca9d8eacf0448a5be25bf8a7985daed3e7952536781be27b0a03bb38aa4",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/line.bin",
+      "type": 2,
+      "size": 1352,
+      "header_offset": 10578496,
+      "data_offset": 10578528,
+      "executable": false,
+      "sha256": "6e82c2a343b7029796ec0b9ef7458c4a5cfc73d21128db9a93a60c76fe988412",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/alert_tip.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10579888,
+      "data_offset": 10579920,
+      "executable": false,
+      "sha256": "803e36901d4eaea5104754fb5c99527b191c8f1f3c0b7493b1d773472bb1c7e1",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/alert.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 10587360,
+      "data_offset": 10587392,
+      "executable": false,
+      "sha256": "e5b67237b2adf1edf042d012945921b5a94220c1991c5ae785c555dc8a66f5c7",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_msnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10619408,
+      "data_offset": 10619440,
+      "executable": false,
+      "sha256": "2f6c685cc836176fa035bf0f10717787959231d671e859649c3f917cfec8d831",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_haze.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10622784,
+      "data_offset": 10622816,
+      "executable": false,
+      "sha256": "04fa1d6924ce60d7ac1f3b2eca2faedd81d52e694475241d0db50b3a9a2f06fe",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_mrain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10626160,
+      "data_offset": 10626192,
+      "executable": false,
+      "sha256": "db13dc9362422335c5d7238bd573b9c087d9c470e199c4894765061e84ee1e69",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_clearl.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10629536,
+      "data_offset": 10629568,
+      "executable": false,
+      "sha256": "a100cd33b464a262cc3ef6aa2b97adb6881b79a3088e63973417e8079b5a2df4",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_rainsnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10637008,
+      "data_offset": 10637040,
+      "executable": false,
+      "sha256": "44e4589eba27b01ef287735c8e76044dd19a6f359c242f20f21d5b9b3ca3a4e4",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_npcloudy.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10640384,
+      "data_offset": 10640416,
+      "executable": false,
+      "sha256": "c6f495e37d86303256bba4ef2c608df582a9bfbf64e7bc5bb8e35ddf45e108e7",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_srain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10643760,
+      "data_offset": 10643792,
+      "executable": false,
+      "sha256": "529e56dccb96c3c840cd6d48570646481f7de0926b81a09f920b5230f2abc746",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_thunder.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10647136,
+      "data_offset": 10647168,
+      "executable": false,
+      "sha256": "823348af588336dbeac90337e7b6f9596dd0d595d5efd4056be5063b90095133",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/yun.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10650512,
+      "data_offset": 10650544,
+      "executable": false,
+      "sha256": "579fba6f3d1c4cf4dff7434f020301a49f45b25eef3909d552af82686e00036c",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/icon_overdue.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10657984,
+      "data_offset": 10658032,
+      "executable": false,
+      "sha256": "edddd8640ac4771df0654497297ceffcb7fae78e14e3bc6ea1f31868af0f07df",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_fog.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10661376,
+      "data_offset": 10661408,
+      "executable": false,
+      "sha256": "207e32025090b2ddc4092709560f0651f9655888d7145cc892618bf17325b9d6",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_clear.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10664752,
+      "data_offset": 10664784,
+      "executable": false,
+      "sha256": "45d3da50b5a5e0989dd0ad08de97a3a4a09a99d37659be700d75222767a1eaba",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/alert_bg.bin",
+      "type": 2,
+      "size": 160004,
+      "header_offset": 10668128,
+      "data_offset": 10668160,
+      "executable": false,
+      "sha256": "318dc977173c9bd7d3b0e3aa1a52d80eb61471b78494b59af2c8124c057e9db8",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/location.bin",
+      "type": 2,
+      "size": 1508,
+      "header_offset": 10828176,
+      "data_offset": 10828208,
+      "executable": false,
+      "sha256": "731dc38bbdcad4c0b4cdc7f4b0f810d989ca0d006599ce9ef88d682f76b4fbdc",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/airp.bin",
+      "type": 2,
+      "size": 2052,
+      "header_offset": 10829728,
+      "data_offset": 10829760,
+      "executable": false,
+      "sha256": "08782ce1796e1ed44208c40242f92d595c98bc217d1b6bfa6bf20e95c6911fe4",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_sand.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10831824,
+      "data_offset": 10831856,
+      "executable": false,
+      "sha256": "a966d6448e8fe13fabb0bc18c2adf54eefeacee93ebbb6731275cdd8492a5154",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/p1.bin",
+      "type": 2,
+      "size": 2052,
+      "header_offset": 10835200,
+      "data_offset": 10835232,
+      "executable": false,
+      "sha256": "d90f6b31ac86f3b5cba989553885a9de8abf662bc45e2b552749af97de695e77",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_hsnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10837296,
+      "data_offset": 10837328,
+      "executable": false,
+      "sha256": "3042296f38637b970ca089a8e3aa9b1afd95248d8ffe116d883e8dbcde86f3b5",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/p0.bin",
+      "type": 2,
+      "size": 2052,
+      "header_offset": 10840672,
+      "data_offset": 10840704,
+      "executable": false,
+      "sha256": "39770cd7de809b5d783a2ecb4dc898643bcfe0f2be3999016d72f95b882d4dd0",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_native.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10842768,
+      "data_offset": 10842800,
+      "executable": false,
+      "sha256": "99932ca9d8eacf0448a5be25bf8a7985daed3e7952536781be27b0a03bb38aa4",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_storm.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10846144,
+      "data_offset": 10846176,
+      "executable": false,
+      "sha256": "a6521310e1417902c788c71d1f718c29cd111763650815246fbba3491baefec1",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_ssnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10849520,
+      "data_offset": 10849552,
+      "executable": false,
+      "sha256": "7e342a378cb36d20d564f3899e620aab1a3fcf5024b06e85badcb67749d40c04",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/p2.bin",
+      "type": 2,
+      "size": 2052,
+      "header_offset": 10852896,
+      "data_offset": 10852928,
+      "executable": false,
+      "sha256": "13f38387a9ff12ce9851d19de713351da06cabfacb143a3990e35524aa74db87",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_nclear.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10854992,
+      "data_offset": 10855024,
+      "executable": false,
+      "sha256": "fb218c8225bbccb8b094e4910c6075d634880e8bd86620cc884d3a8c021fa27b",
+      "elf": false
+    },
+    {
+      "path": "/weather/main/i_hrain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 10858368,
+      "data_offset": 10858400,
+      "executable": false,
+      "sha256": "92822a49eff0d7924d3282b2708713653ddc9cc6061c135e83b75af7ef85c37c",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/fog.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10861776,
+      "data_offset": 10861808,
+      "executable": false,
+      "sha256": "7c7892d63568739ea75fac755c25f0ff387656fcb95a8a1c6fa9b8e708018098",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/ssnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10869312,
+      "data_offset": 10869344,
+      "executable": false,
+      "sha256": "94dad33d48ba47c9cac9832676d668a4c4f63ede75e83e1593d7244a4e17e70b",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/nclear.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10876784,
+      "data_offset": 10876816,
+      "executable": false,
+      "sha256": "e2187e33744cf6b588344768a5275d9afdee679c292f755bf46aebd98a85b7cd",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/srain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10884256,
+      "data_offset": 10884288,
+      "executable": false,
+      "sha256": "c8742dd7746f0c7e87392076353d36027418d2da0856039b7806b19dc96fe8df",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/msnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10891728,
+      "data_offset": 10891760,
+      "executable": false,
+      "sha256": "bc8252f826eedcebf311e12973bd640f0311005e48ce5acb9d978ee74be999b9",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/haze.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10899200,
+      "data_offset": 10899232,
+      "executable": false,
+      "sha256": "91e9484aa4d95426c09b9553f9e3dda311ce1fdf3f6237274baf7c17bfd3f567",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/pcloudy.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10906672,
+      "data_offset": 10906704,
+      "executable": false,
+      "sha256": "bf88c3637c3df31f7f7aaa9730a24ba87ff553b589c0474ad09692199f89c8d3",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/hsnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10914144,
+      "data_offset": 10914176,
+      "executable": false,
+      "sha256": "36fa5bca02f3b0de4f7bdde058340e70dcfe2833bd1f40aefce1969b8fc03131",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/clear.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10921616,
+      "data_offset": 10921648,
+      "executable": false,
+      "sha256": "a100cd33b464a262cc3ef6aa2b97adb6881b79a3088e63973417e8079b5a2df4",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/rainsnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10929088,
+      "data_offset": 10929120,
+      "executable": false,
+      "sha256": "d4730c4b68b543041cbf1182c5278c1f8deb3d2a3ddf253c0a8cc8e4488dd175",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/mrain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10936560,
+      "data_offset": 10936592,
+      "executable": false,
+      "sha256": "92f78429850faad89042a0588bccf62c460cdd26d1dfb5fddcaa85241c90ff67",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/sand.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10944032,
+      "data_offset": 10944064,
+      "executable": false,
+      "sha256": "39d3ff278cf6f41183bce30420f7befa677502eed3fb57b158f5a3573e0565ae",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/storm.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10951504,
+      "data_offset": 10951536,
+      "executable": false,
+      "sha256": "14ec2d3745b43c16294cd191c0872ce5419fe8eb0a3aba75c2d4cf8e387b7222",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/hail.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10958976,
+      "data_offset": 10959008,
+      "executable": false,
+      "sha256": "2c7a59324da4ed4f7f6c8475e5ff645cdccbcb3a2e6e7c7329ee5456a4e96f57",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/thunder.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10966448,
+      "data_offset": 10966480,
+      "executable": false,
+      "sha256": "6dcea3106987fe1e373aa0f0e6534e83623e114f7cc54b6891c0e8a0d523acba",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/npcloudy.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10973920,
+      "data_offset": 10973952,
+      "executable": false,
+      "sha256": "0fd16887daac76086ac4d1c83923aa54ff4a135f00fc2c71ac71079750fb7810",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/nfog.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10981392,
+      "data_offset": 10981424,
+      "executable": false,
+      "sha256": "8aa89c4017d00e828537bc8041eed94350d493346e480582c8e63d7731403dea",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/native.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10988864,
+      "data_offset": 10988896,
+      "executable": false,
+      "sha256": "2b5df9ef5fd85bfe87cb281d2248c8b3470f45e2e24e81ddb576416a4150ed3b",
+      "elf": false
+    },
+    {
+      "path": "/weather/i80s1/hrain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 10996336,
+      "data_offset": 10996368,
+      "executable": false,
+      "sha256": "e3a294873087e9cd4632b71751c57875a5f7f48fac69b20563c64f20687c282a",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/fog.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11003936,
+      "data_offset": 11003968,
+      "executable": false,
+      "sha256": "6d4221c8e1e06433ffd19159e85a7fb608c480d05c86a27d58f86491f30f6f77",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/ssnow.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11009168,
+      "data_offset": 11009200,
+      "executable": false,
+      "sha256": "b3c7bf5d2f65ce5f05be810a6265b96977576a48ee2fd5a8c4b64ba69be10db9",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/nclear.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11014336,
+      "data_offset": 11014368,
+      "executable": false,
+      "sha256": "81598b27001f8e135cae367b6c207ea26653a06df3f725c1deeb4a7460ff67a8",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/unknow.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11019504,
+      "data_offset": 11019536,
+      "executable": false,
+      "sha256": "f98868409fbf727a7b63eccc8dd39bfceb5aa5b9acaa30f47276740b88528cd1",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/srain.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11024672,
+      "data_offset": 11024704,
+      "executable": false,
+      "sha256": "76ab7a8b1211595c5c9fa5edb973ec607fe8637a5702f0de2c59df05f91f80fa",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/msnow.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11029840,
+      "data_offset": 11029872,
+      "executable": false,
+      "sha256": "131ebc4677834589acd19cf9c6c9dd83332057cf26191dacb0d5db67c2b82c0e",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/haze.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11035008,
+      "data_offset": 11035040,
+      "executable": false,
+      "sha256": "647bfdf35731ee59dce4d79f30effae415ac773647bb5edd415a54adfd967351",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/icerain.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11040176,
+      "data_offset": 11040208,
+      "executable": false,
+      "sha256": "e48df55a0735c5ab13263fad8943511b60221cdd840d5af7d7a4dabbb683d5fa",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/pcloudy.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11045344,
+      "data_offset": 11045376,
+      "executable": false,
+      "sha256": "b68bfdf8a4c8c4c80662013ba65d5f100366cc7d25edf7a0fde13395c4404686",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/hsnow.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11050512,
+      "data_offset": 11050544,
+      "executable": false,
+      "sha256": "06aa736ae791597b7fc5099d5cfcbd6ce8ca0acb60161f8fa513a77694ec183f",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/clear.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11055680,
+      "data_offset": 11055712,
+      "executable": false,
+      "sha256": "7e6fbe8ade98ebd2a7beeca57cedbb3a9f093b970155f9dd2cfaddb09c68f806",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/rainsnow.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11060848,
+      "data_offset": 11060880,
+      "executable": false,
+      "sha256": "c7ed29441dc90538d09b9ebb5fdca219d0e896bbc87d4600bc8822672a2bd8b8",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/mrain.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11066016,
+      "data_offset": 11066048,
+      "executable": false,
+      "sha256": "3747df219fc4d746371acadb0025f930c022d2dbf2e02b8c97554b65b444c7c0",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/sand.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11071184,
+      "data_offset": 11071216,
+      "executable": false,
+      "sha256": "84e3c1491abd6041fd044a8857f0f1572112e5887394c323cd9a8f5dab50735f",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/storm.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11076352,
+      "data_offset": 11076384,
+      "executable": false,
+      "sha256": "b7db401e49a10ac0b013e95ef1117b78a1618a899462918c00939d1ef9f39843",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/hail.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11081520,
+      "data_offset": 11081552,
+      "executable": false,
+      "sha256": "ecb7796a8a56abd8beb7e871e39b94739e76c1615b097d0c0d524ba40663ecb3",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/thunder.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11086688,
+      "data_offset": 11086720,
+      "executable": false,
+      "sha256": "f3f1f8ee3f7e3f738551e795bc461a8f6bc6539613f794edf5fd094f9cf79b78",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/npcloudy.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11091856,
+      "data_offset": 11091888,
+      "executable": false,
+      "sha256": "5dbd2a76424c8cc519fcad6c3ff3da1eda155ad9d5a5aee8b0332a8c592959c0",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/nfog.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11097024,
+      "data_offset": 11097056,
+      "executable": false,
+      "sha256": "47e6c6e2fe1c8a4c3cd3176bbf3750ded833da1db9d95794bfd26489bfc0a44c",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/native.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11102192,
+      "data_offset": 11102224,
+      "executable": false,
+      "sha256": "a8504a7924217b2a7fd1c27c19cb2012f31549c43c6366068a75c5a258cb08a8",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/64/hrain.bin",
+      "type": 2,
+      "size": 5124,
+      "header_offset": 11107360,
+      "data_offset": 11107392,
+      "executable": false,
+      "sha256": "584ce29477f6382ffa57814dbfb3dc6be080085db3ae65fabaa09157db75ec74",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/fog.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11112560,
+      "data_offset": 11112592,
+      "executable": false,
+      "sha256": "bf1a02742cfb7f5245795d6df5aa7e983bb63fee4fef99f0487bca76023a0e40",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/ssnow.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11120176,
+      "data_offset": 11120208,
+      "executable": false,
+      "sha256": "8c9acceb88aac5aa48b2e86656959f4e6357a1d04856206b212b25172ffaaa20",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/nclear.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11127728,
+      "data_offset": 11127760,
+      "executable": false,
+      "sha256": "20f0850f71e7cc3c02ca18520700ba2013bc4a974dffd47ca20333f9a2fd186a",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/unknow.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11135280,
+      "data_offset": 11135312,
+      "executable": false,
+      "sha256": "ada0b55194aa3f346afe5f1d48d133b587fbb274d1ca4a3f082763d046dcf5c2",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/srain.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11142832,
+      "data_offset": 11142864,
+      "executable": false,
+      "sha256": "8c446a9a8489bff5373872f3b1271048338bee39b1b4ab9aab3e3e7e321d763a",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/msnow.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11150384,
+      "data_offset": 11150416,
+      "executable": false,
+      "sha256": "2530e95238d9679b5c7cc43770c8d7dd60086b30e564dd8f398fdb26fda9cb45",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/haze.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11157936,
+      "data_offset": 11157968,
+      "executable": false,
+      "sha256": "6299e497adfeeb4e529362e8d540bb58e5b048dfcba375f7734a1b793b9a6fd7",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/icerain.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11165488,
+      "data_offset": 11165520,
+      "executable": false,
+      "sha256": "0890977de618d6731c762aa10e46226d470e14c5c0c511288adc66aead21a7ff",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/pcloudy.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11173040,
+      "data_offset": 11173072,
+      "executable": false,
+      "sha256": "d77de9c99f844f4dcbc34ccf86da01f8f48ab9af4d8dc8656b1f704635e60c84",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/hsnow.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11180592,
+      "data_offset": 11180624,
+      "executable": false,
+      "sha256": "c2083ebaeb3a70b999699d9409aad9e6fb78f39e81014fc4e9140c8e15b82d9f",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/clear.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11188144,
+      "data_offset": 11188176,
+      "executable": false,
+      "sha256": "9bcc3904bfe8f16230a3ba20df42efaf5f1c0add301ab2e6a55ce9e64a6e1f06",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/rainsnow.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11195616,
+      "data_offset": 11195648,
+      "executable": false,
+      "sha256": "6caf810db1863bfc6f3d89b27b59c0b011efc88a26a7ae485ffa6a2121fd2d0d",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/mrain.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11203168,
+      "data_offset": 11203200,
+      "executable": false,
+      "sha256": "e8c80dbe18a4dfa775a3428962457a7f6899274448d5b396f66cae48cd16fe3d",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/sand.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11210720,
+      "data_offset": 11210752,
+      "executable": false,
+      "sha256": "58ea47ae1ce6c8a63bab4f1d1f8d9cfb73375a9e0ff6d944339bf6ec59ffc0c7",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/storm.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11218272,
+      "data_offset": 11218304,
+      "executable": false,
+      "sha256": "186d78f5634e7a71623320c725a37aad27b723a370c99df3c37a2c1b273efe46",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/hail.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11225824,
+      "data_offset": 11225856,
+      "executable": false,
+      "sha256": "33cb2f64fe0632ace4b7f4c1fb7ec316d9a9dc7ccec7e77e34637df664fa926a",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/thunder.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11233376,
+      "data_offset": 11233408,
+      "executable": false,
+      "sha256": "67cd30026c879f9b614319fa9881baba1198df3081bf1ad32a65b2b5362f9d2d",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/npcloudy.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11240928,
+      "data_offset": 11240960,
+      "executable": false,
+      "sha256": "df2771b0acf3cc74fa7516f51a8cfe752aa603243ff71cc9fbf6d5b93f32e170",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/nfog.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11248480,
+      "data_offset": 11248512,
+      "executable": false,
+      "sha256": "d03c365af848fdb37a6c80df6be80ab435b9000696a57c7ea42ce8311c7d4aa3",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/native.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11256032,
+      "data_offset": 11256064,
+      "executable": false,
+      "sha256": "9af3bb1832fafe41da781e88bc3ea3804509675e2967fcb500a06c4a02027b2f",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/80/hrain.bin",
+      "type": 2,
+      "size": 7508,
+      "header_offset": 11263584,
+      "data_offset": 11263616,
+      "executable": false,
+      "sha256": "5cabeff080e94ad2783053fdfdbb1f1dee99602fd10e78940a3eddd20cb0b935",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/fog.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11271168,
+      "data_offset": 11271200,
+      "executable": false,
+      "sha256": "80c19c451b288194dd27a169e9e4c655804e409bc942466e1af3bfbec8fa346f",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/ssnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11274608,
+      "data_offset": 11274640,
+      "executable": false,
+      "sha256": "1d7d1db0d4e533e04707014bfaa55a56abea7035d52b1c112ce9e78b2c6f2b1b",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/nclear.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11277984,
+      "data_offset": 11278016,
+      "executable": false,
+      "sha256": "5c8eecf95f9a188156f3571a05be9d85b3b36677ba44adad1d1745ee67f48d51",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/unknow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11281360,
+      "data_offset": 11281392,
+      "executable": false,
+      "sha256": "3eac93e5df7aed9e6898f8030fba4206cae06f34da078e562e593d2985d1ed5e",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/srain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11284736,
+      "data_offset": 11284768,
+      "executable": false,
+      "sha256": "eec67e7eff84bfcdc5b36117849bee42166b462c9414b82afdc5a85c67719609",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/msnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11288112,
+      "data_offset": 11288144,
+      "executable": false,
+      "sha256": "e6755381aca79ccb9bb63af9246fc6bc461ad574442febdadf83ef15df3c26e1",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/haze.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11291488,
+      "data_offset": 11291520,
+      "executable": false,
+      "sha256": "a182e5eb631dc3a564e61511d46062d351b3bb918ec0bac465bfc002ca7f4996",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/icerain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11294864,
+      "data_offset": 11294896,
+      "executable": false,
+      "sha256": "a858bd82f71c38590a0a7ba270ce54174fca125e9050a340fecc7c9b1229db3a",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/pcloudy.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11298240,
+      "data_offset": 11298272,
+      "executable": false,
+      "sha256": "705ce4b2ffb490ac2fdd6fea8c7a225d8658649e628c754fbe1189343b33362c",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/hsnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11301616,
+      "data_offset": 11301648,
+      "executable": false,
+      "sha256": "c4cec9dd4ab7266d8ef6b266d7a45a2ebf4de0dbb4be391563b6f88d209b7e9c",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/clear.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11304992,
+      "data_offset": 11305024,
+      "executable": false,
+      "sha256": "51a35579ee1dca0fb15948ae4c367be134de0f63ef0a9b464a505d1baac12df6",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/rainsnow.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11308368,
+      "data_offset": 11308400,
+      "executable": false,
+      "sha256": "7bbb97c4ff2e36501af52cd74cdf26e925f5ce70137e2e0e5f2959a8551a0e9e",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/mrain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11311744,
+      "data_offset": 11311776,
+      "executable": false,
+      "sha256": "1b9be5cc3bab66f7908f43dc25b4749066e929766076f0970c0c269608099550",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/sand.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11315120,
+      "data_offset": 11315152,
+      "executable": false,
+      "sha256": "dc5c20eb67685677b647984e0d347d42c6bdf707b238595990366393af584f1f",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/storm.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11318496,
+      "data_offset": 11318528,
+      "executable": false,
+      "sha256": "4b2f47b9324f1557ed2fae016e75d6bf5c7c11e0606cf07076d49ec61146d15e",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/hail.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11321872,
+      "data_offset": 11321904,
+      "executable": false,
+      "sha256": "85f78b687f9423413cfb3e593c39660810b038ed25242b7a259cf527430eba4a",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/thunder.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11325248,
+      "data_offset": 11325280,
+      "executable": false,
+      "sha256": "fcd029785924cb45005f0403a2fe1ae418c5172ba264eb0321fd6f3911cfa16b",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/npcloudy.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11328624,
+      "data_offset": 11328656,
+      "executable": false,
+      "sha256": "8031d5d88752b2e12a3fe798ad57c384d1843a9b088ee6ffc54e1cba389f9c9c",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/nfog.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11332000,
+      "data_offset": 11332032,
+      "executable": false,
+      "sha256": "5be4c71266a56e1e34331616cbf7e6a5188f457b687d3abb3a93393d1d5b31d6",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/native.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11335376,
+      "data_offset": 11335408,
+      "executable": false,
+      "sha256": "f75794d8bd5deb40484d133be6e26b06b3a86cadd952a9eee1f45994f7780438",
+      "elf": false
+    },
+    {
+      "path": "/weather/icon/48/hrain.bin",
+      "type": 2,
+      "size": 3332,
+      "header_offset": 11338752,
+      "data_offset": 11338784,
+      "executable": false,
+      "sha256": "a53ac0edaa263e929cab02ff30033034a8ce03ee6a3036c1c0e3f112421b1330",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nstom.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11342160,
+      "data_offset": 11342192,
+      "executable": false,
+      "sha256": "e4c8daa42ca5af8561e2ba22d288fb9c32d551417995c4bde5b609512b2329c7",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nthunder.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11374208,
+      "data_offset": 11374240,
+      "executable": false,
+      "sha256": "ec0100c100c1cf13ac4996b6c3d1b3e86b76e76b0ce2f17c7770a570009fb28b",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_stom.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11406288,
+      "data_offset": 11406320,
+      "executable": false,
+      "sha256": "a98b5930dc959525d04f031d6ab0ddf8c8aa4f7d050354090a2990407f6023d6",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nfog.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11438336,
+      "data_offset": 11438368,
+      "executable": false,
+      "sha256": "f3eb045048079c6e0a07999c19890cc6581491ebd5a53282bbdb9f8d319b8396",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_sand.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11470384,
+      "data_offset": 11470416,
+      "executable": false,
+      "sha256": "394a9b639409089f67c0d5368be464d41c182cb952e35987d810980a00edb80b",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_hsnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11502464,
+      "data_offset": 11502496,
+      "executable": false,
+      "sha256": "3efd9d214d1d1454cc50f4644765d2a4fd9a38452952a17e7599d159886fe11e",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_mrain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11509936,
+      "data_offset": 11509968,
+      "executable": false,
+      "sha256": "5d06910bd44cb416637ad16e31d5348773c5914894cdcdd8a0252ac385671106",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nnative.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11517408,
+      "data_offset": 11517440,
+      "executable": false,
+      "sha256": "b8f332a15a229a5af751d7e0a8ed95b45831c4efe9a3ce083db374358d948fac",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nmrain.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11549456,
+      "data_offset": 11549488,
+      "executable": false,
+      "sha256": "6613461c146138ff59055e7b22ee42daac54f23bafee1f75dca3145728a5ec7a",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_hsnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11581600,
+      "data_offset": 11581632,
+      "executable": false,
+      "sha256": "546279c69e224af20e0b5f4781224e82e3dde8dd65ba04bf546be050a0489e7c",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_mrain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11589072,
+      "data_offset": 11589104,
+      "executable": false,
+      "sha256": "683e61e73c587b69d2ff226d65c3ecdbeae8fe63ce8fe5b82cd7129cd25e2042",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_srain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11596544,
+      "data_offset": 11596576,
+      "executable": false,
+      "sha256": "73b37339e9c9ee75f547eed611c75e50ba15c2d26eefc71761e6e059ecd755bb",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_native.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11604016,
+      "data_offset": 11604048,
+      "executable": false,
+      "sha256": "24daae71446cdb76f4647d80595a02f8d5ab50894c31e20aec9d23442a0d6116",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_sand.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11611488,
+      "data_offset": 11611520,
+      "executable": false,
+      "sha256": "9c48e196d353a67aeeb96444c1590130f7c571c1e44d8b6b739deabd256d449b",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_fog.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11618960,
+      "data_offset": 11618992,
+      "executable": false,
+      "sha256": "aca8f97a6e39925d9d5c283bef130d45e8e172b8ac83ed032194e9c183ad21aa",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_nclear.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11626432,
+      "data_offset": 11626464,
+      "executable": false,
+      "sha256": "476938fbf06366d169f0720bdafa4bd3f2a5ef1b60c4ee804187947d65751d45",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_nfog.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11633904,
+      "data_offset": 11633936,
+      "executable": false,
+      "sha256": "54d2a1a5ff7f1d132ca6c62e13dd793fc3a64ee55d1969aab07de12ba3e977ee",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_haze.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11641376,
+      "data_offset": 11641408,
+      "executable": false,
+      "sha256": "1c54a94cedfd6611b73b8835e187bf047d8ba151b2bcd5b9a66bd34c2e354df5",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_hrain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11648848,
+      "data_offset": 11648880,
+      "executable": false,
+      "sha256": "a5f47361e86b6c572ddeecd87eb2482649e70b6dc0b607f07d0a7f645fd1c98a",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_icerain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11656320,
+      "data_offset": 11656352,
+      "executable": false,
+      "sha256": "a51823049a38116089666840d7c5dc5c6cc7a8d14bdd651f41422f7cf4b4ea7a",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_ssnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11663792,
+      "data_offset": 11663824,
+      "executable": false,
+      "sha256": "37afd8eb78e715195842edfc93234259fa55dbf31e10c2ba29ea7e691dd5e9dd",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_stom.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11671264,
+      "data_offset": 11671296,
+      "executable": false,
+      "sha256": "5e28b8fddc4caf68673cd24494c275dcd0b14781a9fd7554993b90f6b7563a2f",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_pcloudy.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11678736,
+      "data_offset": 11678768,
+      "executable": false,
+      "sha256": "fddbf5ed6e2ad8642bb594b697c660e43adfaa01cce65da7b0c76ffa1d1ef1a4",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_clear.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11686208,
+      "data_offset": 11686240,
+      "executable": false,
+      "sha256": "6e9415db201e304e2aa29aaf2ebbd843558928dc8feaf1b39cf092abb207f6c5",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_msnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11693680,
+      "data_offset": 11693712,
+      "executable": false,
+      "sha256": "60a7a58a6126448201083e237fb20a7750353e3c62af6b9aa575e8b05c83ee77",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_thunder.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11701152,
+      "data_offset": 11701184,
+      "executable": false,
+      "sha256": "93a4353a8b95b6903b9e4db5021dfa7e081a34ca97162a242244cfef387f7377",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_rainsnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11708624,
+      "data_offset": 11708656,
+      "executable": false,
+      "sha256": "92eaecf394714723cb689717bd43018fb05828c21b802a23a88dd3a92382a1bb",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_npcloudy.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11716096,
+      "data_offset": 11716128,
+      "executable": false,
+      "sha256": "c018da76cd759ec37b4e469e1ece4dfd9de68375b6063ad3bbe51b7634a61447",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/gen2/si_hail.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11723568,
+      "data_offset": 11723600,
+      "executable": false,
+      "sha256": "507428a334f2950c503a326ff67dfd9efb01f8f798b850717622ea63c33f87ff",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_srain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11731040,
+      "data_offset": 11731072,
+      "executable": false,
+      "sha256": "5a3eaf92ee21ba3b375255514e6e661eef3371a3da5eb8b17efb4931260fd0ba",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_native.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11738512,
+      "data_offset": 11738544,
+      "executable": false,
+      "sha256": "c66d1ddfe71d395efd438dc646f727a9ad13848817fa4a60d631b8745ab4dc24",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_sand.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11745984,
+      "data_offset": 11746016,
+      "executable": false,
+      "sha256": "d0d4ed311a3865ce692b431283950768c140aa5a1a04dd744c0c3609001c8b46",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_fog.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11753456,
+      "data_offset": 11753488,
+      "executable": false,
+      "sha256": "7809ac3ac7144980e04c22ab74e153ff47b52919c8b0b0cddbf69cae218b98e6",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_hsnow.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11760928,
+      "data_offset": 11760960,
+      "executable": false,
+      "sha256": "67e607530f8d4d2450d82425706e6748a52eec8589c09669d6b3fc0eeb67e418",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_nclear.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11792976,
+      "data_offset": 11793008,
+      "executable": false,
+      "sha256": "cb1278ab3ae4deeabcae38d060e4f77d4953bf7c06342aab8f48a7624c026f8d",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_ssnow.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11800448,
+      "data_offset": 11800480,
+      "executable": false,
+      "sha256": "4c2a710f318e4ace6d6fea0b2cc7dc72e0641ae32e0e22d859cb62223dfb5411",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_nfog.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11832496,
+      "data_offset": 11832528,
+      "executable": false,
+      "sha256": "778ed22624cf51d7a0209c96d2adbe1f87bd691175677b7cf3dcbb257479cba2",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nhaze.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11839968,
+      "data_offset": 11840000,
+      "executable": false,
+      "sha256": "ad1fea2772f14668c8815995d1c7475b7db0fd0b0a6ee917c20b5bed3d94ad39",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_mclear.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11872016,
+      "data_offset": 11872048,
+      "executable": false,
+      "sha256": "750c010d9d37df61b455274736a798f6098f90d20fdaac022db664852b9aeedf",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nfclear.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11904064,
+      "data_offset": 11904096,
+      "executable": false,
+      "sha256": "263915c5ddc50b672d973681847a19ae7473dd6962510400bfd089b901c0555b",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_haze.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11936112,
+      "data_offset": 11936144,
+      "executable": false,
+      "sha256": "a73805f4f1769e39fb17f7df0976da236a2097b35a0130ec7076e90bba4f763e",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_hrain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 11943584,
+      "data_offset": 11943616,
+      "executable": false,
+      "sha256": "23612fed9d179f4444ca7b6024cc6beee7099eef7920318ab2bbf5f5f4ef702a",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nssnow.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11951056,
+      "data_offset": 11951088,
+      "executable": false,
+      "sha256": "530274196f3b2ba696e51a26c7c0be60cb90feee0ebf6bc5a4bf593af8abad53",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_fog.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 11983104,
+      "data_offset": 11983136,
+      "executable": false,
+      "sha256": "3e0c9780a14d8614b258e663115f327ebad32b1d924132338582c0d0bd6b0725",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_icerain.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12015152,
+      "data_offset": 12015184,
+      "executable": false,
+      "sha256": "dd72f7814177881686481aeac16b8f2aae8a0d0a9e47f424f5fd26723ec80c62",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nclear.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12022624,
+      "data_offset": 12022656,
+      "executable": false,
+      "sha256": "cd76f29390f26b1a70dd06a2d7fc5146bf8cedc41b545af0ecf17d4e5bf9e491",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nhsnow.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12054672,
+      "data_offset": 12054704,
+      "executable": false,
+      "sha256": "530274196f3b2ba696e51a26c7c0be60cb90feee0ebf6bc5a4bf593af8abad53",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_native.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12086720,
+      "data_offset": 12086752,
+      "executable": false,
+      "sha256": "a66434a295309290889ebf05b44ae40db6d2390dcee96dff2aa85c4343b4d42e",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_ssnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12118768,
+      "data_offset": 12118800,
+      "executable": false,
+      "sha256": "a993f5b0f2b58e296e533e5119d790c74bfddfd40660964283637e3ac5b70ef3",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_thunder.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12126240,
+      "data_offset": 12126272,
+      "executable": false,
+      "sha256": "c02f5bdd4af60f6d474895e37ca5aded97771a08bfc4f45c77c7159bbb2a79b8",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nsrain.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12158288,
+      "data_offset": 12158320,
+      "executable": false,
+      "sha256": "6613461c146138ff59055e7b22ee42daac54f23bafee1f75dca3145728a5ec7a",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_haze.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12190336,
+      "data_offset": 12190368,
+      "executable": false,
+      "sha256": "1386bf37f6f6c5faf97942c7708870caaeac46f2f6ec5f692d22b25c86b19226",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_stom.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12222384,
+      "data_offset": 12222416,
+      "executable": false,
+      "sha256": "f1bcd05827ffc0c940c630ad91002afb9bb014d589b85100536c816ae108c120",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_clear.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12229856,
+      "data_offset": 12229888,
+      "executable": false,
+      "sha256": "145dfe244b0e4548bbd0afc88e05e82a3166bbb5f390fa687856507105166200",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nsand.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12261904,
+      "data_offset": 12261936,
+      "executable": false,
+      "sha256": "3bcf04f18075bbe3c3a3959221e09d6bd27fc0907195853da36d3990ed344f41",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_pcloudy.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12293952,
+      "data_offset": 12293984,
+      "executable": false,
+      "sha256": "ee10a447598de7276d2d2dda421f97f27711d7b4c0ad881f45339f3f9682b140",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_clear.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12301424,
+      "data_offset": 12301456,
+      "executable": false,
+      "sha256": "4d4879ab4aa47cb35d7521ea47937f3a4b5d4e76c3ab3849d1d7ce995dcfd392",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nhrain.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12308896,
+      "data_offset": 12308928,
+      "executable": false,
+      "sha256": "6613461c146138ff59055e7b22ee42daac54f23bafee1f75dca3145728a5ec7a",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_msnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12340944,
+      "data_offset": 12340976,
+      "executable": false,
+      "sha256": "fabacd07eaa6fe14cbc320c5b28629549d114543018bfb176eb45938d853cc6d",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/widget_11dark.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12348416,
+      "data_offset": 12348464,
+      "executable": false,
+      "sha256": "19161fdb89883f4574a090e968b3ee3f94aa959f4e0d7b6c62eea7ae3692b5e3",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_msnow.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12380480,
+      "data_offset": 12380512,
+      "executable": false,
+      "sha256": "6aa5fe16a36fef6c53cbdc80d7f85ac56faeaa5c60363544bf69843574c9471d",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_srain.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12412528,
+      "data_offset": 12412560,
+      "executable": false,
+      "sha256": "4d5f84e537d64acba9c31e270810842b7c97191cd63089ad8b4eca3eb7a87bac",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_hrain.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12444576,
+      "data_offset": 12444608,
+      "executable": false,
+      "sha256": "2c5c66b9640373db22078bd8cfc8b0337f339cf877cfbcb22c651e5424a4148b",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_nmsnow.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12476624,
+      "data_offset": 12476656,
+      "executable": false,
+      "sha256": "530274196f3b2ba696e51a26c7c0be60cb90feee0ebf6bc5a4bf593af8abad53",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/sb_mrain.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12508672,
+      "data_offset": 12508704,
+      "executable": false,
+      "sha256": "b21e23373c9f15c0e303a975bedc5d69cd6582764f8930b0ff5b161685ab974f",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_thunder.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12540720,
+      "data_offset": 12540752,
+      "executable": false,
+      "sha256": "794da13faa17de691f3f60485df01fc948527be1d7b6198de8aa35aa106752cc",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_rainsnow.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12548192,
+      "data_offset": 12548224,
+      "executable": false,
+      "sha256": "d5231eeac711b197b855d462717ce0a1c4d09740af735d026b73f798a0e24a15",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_npcloudy.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12555664,
+      "data_offset": 12555696,
+      "executable": false,
+      "sha256": "501d0093c1893f9a2a5f4d43554522db87106dd5912ef8dbb8fc4eaf9eb24204",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/widget_light11.bin",
+      "type": 2,
+      "size": 32004,
+      "header_offset": 12563136,
+      "data_offset": 12563184,
+      "executable": false,
+      "sha256": "50118904f89de0c7ad05dcff82d08dbcc0e9ef0dfe99922e0060399ab2f1723c",
+      "elf": false
+    },
+    {
+      "path": "/weather/widget/si_hail.bin",
+      "type": 2,
+      "size": 7428,
+      "header_offset": 12595200,
+      "data_offset": 12595232,
+      "executable": false,
+      "sha256": "9a46ebb70ffbd5c5d18cccf12869e5e3859ea85ae9f5dbac43b9c46fae75529f",
+      "elf": false
+    }
+  ]
+}

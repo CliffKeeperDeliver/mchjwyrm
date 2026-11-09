@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-07",
+  "method": "ADB Wi-Fi; Mi Fitness UI read-only",
+  "wearable": "Xiaomi Smart Band 9",
+  "connection_status": "Подключено",
+  "screen": "Еще",
+  "field": "Версия устройства",
+  "value": "2.3.98",
+  "matches_downloaded_ota_manifest": true
+}

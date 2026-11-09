@@ -1,0 +1,29 @@
+# Both revision branches, experimental zeroed pin configuration and virtual clocks.
+# CHIP_ID values are test inputs, not measurements from the bracelet.
+save power_on
+core on
+cache on
+aon 0x000d0000
+ram on
+iomux on
+timers on
+cmu on
+run 100000 20000
+report band_emulator/results/debug-startup-io-revision13.json
+restore power_on
+core on
+cache on
+aon 0x000e0000
+ram on
+iomux on
+timers on
+cmu on
+run 100000 20000
+disasm
+timers
+save bootmode
+report band_emulator/results/debug-startup-io-revision14.json
+restore power_on
+report band_emulator/results/debug-startup-io-restored.json
+restore bootmode
+status
