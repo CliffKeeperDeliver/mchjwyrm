@@ -1,0 +1,11 @@
+__pycache__/
+band_emulator/python_deps/
+
+# Xiaomi firmware stays local: this repository is public and the image is not
+# ours to redistribute. Restore with band_emulator/setup.sh (see README.md).
+band_emulator/n66gl-2.3.98/stock-2.3.98.bin
+band_emulator/n66gl-2.3.98/extracted/
+
+# Per-run server output: capability keys and local network addresses.
+band_emulator/results/browser-session.json
+band_emulator/results/browser-server*.log

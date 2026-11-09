@@ -1,0 +1,23 @@
+{
+  "name": "Band 9 Global 2.3.98 — experimental function harness",
+  "image": "../n66gl-2.3.98/extracted/vela_ap.bin",
+  "sha256": "7c0115d92f7aa5d22dcb3f9a1ff0614904d736609d2d29eebc32f9ab3f7ebab1",
+  "image_base": "0x0c100000",
+  "image_read_aliases": ["0x2c100000"],
+  "ram_base": "0x20000000",
+  "ram_execution_alias": "0x00200000",
+  "ram_size": "0x160000",
+  "stack_pointer": "0x2015fe80",
+  "return_address": "0x10000000",
+  "startup_offset": "0x10",
+  "demo_function_offset": "0x12cc",
+  "demo_register": "0x4008005c",
+  "assumptions": [
+    "Image base inferred from startup literal at file offset 0x64: 0x0c100015 points to Thumb entry at offset 0x14.",
+    "Stack pointer comes from startup literal at offset 0x68. RAM extent is an experimental model, not a verified complete memory map.",
+    "Read-only image alias at 0x2c100000 inferred from matching string pointers. Debugger can opt into partial SCB/NVIC, cache, AON, IOMUX, CMU and instruction-clock timers; ROM, interrupt delivery, physical clock behavior, display, Bluetooth and sensors are absent.",
+    "Optional shared execution alias at 0x00200000 is inferred from relocation and branch targets and corroborated by BES-family mapping. AON CHIP_ID inputs are experimental, not measured on the bracelet.",
+    "Demo models a single 32-bit register as plain read/write storage; its real hardware side effects are unknown.",
+    "A returned function is not evidence that the operating system boots or that modified firmware can be flashed."
+  ]
+}

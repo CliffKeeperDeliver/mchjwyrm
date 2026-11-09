@@ -1,0 +1,22 @@
+# Explicit experiments for BOTH sides of the stock revision > 13 condition.
+# Neither CHIP_ID value is claimed to match the physical bracelet.
+save power_on
+core on
+cache on
+aon 0x000d0000
+ram on
+run 100000 20000
+report band_emulator/results/debug-startup-revision13.json
+restore power_on
+core on
+cache on
+aon 0x000e0000
+ram on
+run 100000 20000
+disasm 0x00260088 12
+save iomux
+report band_emulator/results/debug-startup-revision14.json
+restore power_on
+report band_emulator/results/debug-startup-ram-restored.json
+restore iomux
+status

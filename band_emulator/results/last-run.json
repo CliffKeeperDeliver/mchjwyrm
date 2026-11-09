@@ -1,0 +1,102 @@
+{
+  "profile": "Band 9 Global 2.3.98 — experimental function harness",
+  "image_sha256": "7c0115d92f7aa5d22dcb3f9a1ff0614904d736609d2d29eebc32f9ab3f7ebab1",
+  "cpu": "Cortex-M33 (Unicorn)",
+  "status": "returned",
+  "error": null,
+  "fault": null,
+  "entry_offset": "0x12cc",
+  "entry_address": "0xc1012cc",
+  "instructions": 6,
+  "max_instructions": 10000,
+  "timeout_ms": 2000,
+  "registers": {
+    "r0": "0x0",
+    "r1": "0x0",
+    "r2": "0x40080000",
+    "r3": "0xa5a5a5a2",
+    "r4": "0x0",
+    "r5": "0x0",
+    "r6": "0x0",
+    "r7": "0x0",
+    "r8": "0x0",
+    "r9": "0x0",
+    "r10": "0x0",
+    "r11": "0x0",
+    "r12": "0x0",
+    "sp": "0x2015fe80",
+    "lr": "0x10000001",
+    "pc": "0x10000000",
+    "xpsr": "0x41000000"
+  },
+  "mmio_model": "explicit 32-bit read/write storage; real hardware behavior NOT validated",
+  "mmio_registers": {
+    "0x4008005c": "0xa5a5a5a2"
+  },
+  "mmio_event_count": 2,
+  "mmio_events": [
+    {
+      "kind": "read",
+      "address": "0x4008005c",
+      "value": "0xa5a5a5a5",
+      "pc": "0xc1012ce"
+    },
+    {
+      "kind": "write",
+      "address": "0x4008005c",
+      "value": "0xa5a5a5a2",
+      "pc": "0xc1012d8"
+    }
+  ],
+  "trace_tail": [
+    {
+      "address": "0xc1012cc",
+      "offset": "0x12cc",
+      "bytes": "034a",
+      "instruction": "ldr r2, [pc, #0xc]"
+    },
+    {
+      "address": "0xc1012ce",
+      "offset": "0x12ce",
+      "bytes": "d36d",
+      "instruction": "ldr r3, [r2, #0x5c]"
+    },
+    {
+      "address": "0xc1012d0",
+      "offset": "0x12d0",
+      "bytes": "23f00703",
+      "instruction": "bic r3, r3, #7"
+    },
+    {
+      "address": "0xc1012d4",
+      "offset": "0x12d4",
+      "bytes": "43f00203",
+      "instruction": "orr r3, r3, #2"
+    },
+    {
+      "address": "0xc1012d8",
+      "offset": "0x12d8",
+      "bytes": "d365",
+      "instruction": "str r3, [r2, #0x5c]"
+    },
+    {
+      "address": "0xc1012da",
+      "offset": "0x12da",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    }
+  ],
+  "assumptions": [
+    "Image base inferred from startup literal at file offset 0x64: 0x0c100015 points to Thumb entry at offset 0x14.",
+    "Stack pointer comes from startup literal at offset 0x68. RAM extent is an experimental model, not a verified complete memory map.",
+    "No flash aliases, ROM functions, interrupt controller, timers, display, Bluetooth or sensors are modeled.",
+    "Demo models a single 32-bit register as plain read/write storage; its real hardware side effects are unknown.",
+    "A returned function is not evidence that the operating system boots or that modified firmware can be flashed."
+  ],
+  "full_device_emulation": false,
+  "demo_check": {
+    "expected": "0xa5a5a5a2",
+    "actual": "0xa5a5a5a2",
+    "passed": true
+  }
+}

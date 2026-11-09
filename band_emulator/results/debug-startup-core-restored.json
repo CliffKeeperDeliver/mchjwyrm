@@ -1,0 +1,76 @@
+{
+  "profile": "Band 9 Global 2.3.98 — experimental function harness",
+  "image_sha256": "7c0115d92f7aa5d22dcb3f9a1ff0614904d736609d2d29eebc32f9ab3f7ebab1",
+  "status": "ready",
+  "fault": null,
+  "error": null,
+  "instructions": 0,
+  "last_slice_instructions": 0,
+  "registers": {
+    "r0": "0x0",
+    "r1": "0x0",
+    "r2": "0x0",
+    "r3": "0x0",
+    "r4": "0x0",
+    "r5": "0x0",
+    "r6": "0x0",
+    "r7": "0x0",
+    "r8": "0x0",
+    "r9": "0x0",
+    "r10": "0x0",
+    "r11": "0x0",
+    "r12": "0x0",
+    "sp": "0x2015fe80",
+    "lr": "0x10000001",
+    "pc": "0xc100010",
+    "xpsr": "0x41000000",
+    "msp": "0x2015fe80",
+    "psp": "0x0",
+    "control": "0x0",
+    "primask": "0x0",
+    "basepri": "0x0",
+    "faultmask": "0x0"
+  },
+  "breakpoints": [],
+  "snapshots": [
+    "power_on",
+    "chip_register"
+  ],
+  "memory_regions": [
+    {
+      "start": "0xc100000",
+      "end": "0xc732fff",
+      "permissions": 5
+    },
+    {
+      "start": "0x10000000",
+      "end": "0x10000fff",
+      "permissions": 5
+    },
+    {
+      "start": "0x20000000",
+      "end": "0x2015ffff",
+      "permissions": 3
+    },
+    {
+      "start": "0x2c100000",
+      "end": "0x2c732fff",
+      "permissions": 1
+    }
+  ],
+  "modeled_registers": {},
+  "trace_tail": [],
+  "mmio_events": [],
+  "mmio_event_count": 0,
+  "mmio_model": "Explicit plain 32-bit storage; hardware side effects are not simulated",
+  "full_device_emulation": false,
+  "assumptions": [
+    "Image base inferred from startup literal at file offset 0x64: 0x0c100015 points to Thumb entry at offset 0x14.",
+    "Stack pointer comes from startup literal at offset 0x68. RAM extent is an experimental model, not a verified complete memory map.",
+    "Read-only image alias at 0x2c100000 inferred from matching string pointers. No ROM functions, interrupt controller, timers, display, Bluetooth or sensors are modeled.",
+    "Demo models a single 32-bit register as plain read/write storage; its real hardware side effects are unknown.",
+    "A returned function is not evidence that the operating system boots or that modified firmware can be flashed."
+  ],
+  "system_control": null,
+  "cache_control": []
+}

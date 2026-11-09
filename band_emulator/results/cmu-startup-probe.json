@@ -1,0 +1,3600 @@
+{
+  "profile": "Band 9 Global 2.3.98 \u2014 experimental function harness",
+  "image_sha256": "7c0115d92f7aa5d22dcb3f9a1ff0614904d736609d2d29eebc32f9ab3f7ebab1",
+  "status": "peripheral_fault",
+  "fault": {
+    "pc": "0xc1015fc",
+    "access": "read",
+    "address": "0x40080038",
+    "size": 4,
+    "reason": "Unimplemented AON read at 0x40080038",
+    "instruction_state_rolled_back": true
+  },
+  "error": null,
+  "instructions": 85926,
+  "last_slice_instructions": 85926,
+  "registers": {
+    "r0": "0x0",
+    "r1": "0x0",
+    "r2": "0x20068670",
+    "r3": "0x40080000",
+    "r4": "0x0",
+    "r5": "0x0",
+    "r6": "0x0",
+    "r7": "0x0",
+    "r8": "0x0",
+    "r9": "0x2c1019a4",
+    "r10": "0x0",
+    "r11": "0x0",
+    "r12": "0xf",
+    "sp": "0x2015fe68",
+    "lr": "0xc101719",
+    "pc": "0xc1015fc",
+    "xpsr": "0x21000000",
+    "msp": "0x2015fe68",
+    "psp": "0x0",
+    "control": "0x0",
+    "primask": "0x0",
+    "basepri": "0x0",
+    "faultmask": "0x0"
+  },
+  "breakpoints": [],
+  "snapshots": [],
+  "memory_regions": [
+    {
+      "start": "0x200000",
+      "end": "0x35ffff",
+      "permissions": 5
+    },
+    {
+      "start": "0x7ffa000",
+      "end": "0x7ffafff",
+      "permissions": 3
+    },
+    {
+      "start": "0x7ffc000",
+      "end": "0x7ffcfff",
+      "permissions": 3
+    },
+    {
+      "start": "0xc100000",
+      "end": "0xc732fff",
+      "permissions": 5
+    },
+    {
+      "start": "0x10000000",
+      "end": "0x10000fff",
+      "permissions": 5
+    },
+    {
+      "start": "0x20000000",
+      "end": "0x2015ffff",
+      "permissions": 3
+    },
+    {
+      "start": "0x2c100000",
+      "end": "0x2c732fff",
+      "permissions": 1
+    },
+    {
+      "start": "0x40000000",
+      "end": "0x40000fff",
+      "permissions": 3
+    },
+    {
+      "start": "0x40003000",
+      "end": "0x40003fff",
+      "permissions": 3
+    },
+    {
+      "start": "0x40080000",
+      "end": "0x40080fff",
+      "permissions": 3
+    },
+    {
+      "start": "0x40084000",
+      "end": "0x40084fff",
+      "permissions": 3
+    },
+    {
+      "start": "0x40086000",
+      "end": "0x40086fff",
+      "permissions": 3
+    },
+    {
+      "start": "0xe000e000",
+      "end": "0xe000efff",
+      "permissions": 3
+    }
+  ],
+  "modeled_registers": {},
+  "trace_tail": [
+    {
+      "address": "0x260100",
+      "offset": "0x60100",
+      "region": "ram_execution",
+      "bytes": "0b48",
+      "instruction": "ldr r0, [pc, #0x2c]"
+    },
+    {
+      "address": "0x260102",
+      "offset": "0x60102",
+      "region": "ram_execution",
+      "bytes": "a3f12002",
+      "instruction": "sub.w r2, r3, #0x20"
+    },
+    {
+      "address": "0x260106",
+      "offset": "0x60106",
+      "region": "ram_execution",
+      "bytes": "3f2b",
+      "instruction": "cmp r3, #0x3f"
+    },
+    {
+      "address": "0x260108",
+      "offset": "0x60108",
+      "region": "ram_execution",
+      "bytes": "4fead201",
+      "instruction": "lsr.w r1, r2, #3"
+    },
+    {
+      "address": "0x26010c",
+      "offset": "0x6010c",
+      "region": "ram_execution",
+      "bytes": "00eb8101",
+      "instruction": "add.w r1, r0, r1, lsl #2"
+    },
+    {
+      "address": "0x260110",
+      "offset": "0x60110",
+      "region": "ram_execution",
+      "bytes": "87bf",
+      "instruction": "ittee hi"
+    },
+    {
+      "address": "0x260112",
+      "offset": "0x60112",
+      "region": "ram_execution",
+      "bytes": "3c46",
+      "instruction": "mov r4, r7"
+    },
+    {
+      "address": "0x260114",
+      "offset": "0x60114",
+      "region": "ram_execution",
+      "bytes": "3846",
+      "instruction": "mov r0, r7"
+    },
+    {
+      "address": "0x26011a",
+      "offset": "0x6011a",
+      "region": "ram_execution",
+      "bytes": "92bf",
+      "instruction": "itee ls"
+    },
+    {
+      "address": "0x26011e",
+      "offset": "0x6011e",
+      "region": "ram_execution",
+      "bytes": "a3f14002",
+      "instruction": "sub.w r2, r3, #0x40"
+    },
+    {
+      "address": "0x260122",
+      "offset": "0x60122",
+      "region": "ram_execution",
+      "bytes": "a3f13006",
+      "instruction": "sub.w r6, r3, #0x30"
+    },
+    {
+      "address": "0x260126",
+      "offset": "0x60126",
+      "region": "ram_execution",
+      "bytes": "d0e7",
+      "instruction": "b #0x2600ca"
+    },
+    {
+      "address": "0x2600ca",
+      "offset": "0x600ca",
+      "region": "ram_execution",
+      "bytes": "d1f800b0",
+      "instruction": "ldr.w fp, [r1]"
+    },
+    {
+      "address": "0x2600ce",
+      "offset": "0x600ce",
+      "region": "ram_execution",
+      "bytes": "0cfa05f1",
+      "instruction": "lsl.w r1, ip, r5"
+    },
+    {
+      "address": "0x2600d2",
+      "offset": "0x600d2",
+      "region": "ram_execution",
+      "bytes": "01ea0b01",
+      "instruction": "and.w r1, r1, fp"
+    },
+    {
+      "address": "0x2600d6",
+      "offset": "0x600d6",
+      "region": "ram_execution",
+      "bytes": "e940",
+      "instruction": "lsrs r1, r5"
+    },
+    {
+      "address": "0x2600d8",
+      "offset": "0x600d8",
+      "region": "ram_execution",
+      "bytes": "0f29",
+      "instruction": "cmp r1, #0xf"
+    },
+    {
+      "address": "0x2600da",
+      "offset": "0x600da",
+      "region": "ram_execution",
+      "bytes": "0ad1",
+      "instruction": "bne #0x2600f2"
+    },
+    {
+      "address": "0x2600f2",
+      "offset": "0x600f2",
+      "region": "ram_execution",
+      "bytes": "0133",
+      "instruction": "adds r3, #1"
+    },
+    {
+      "address": "0x2600f4",
+      "offset": "0x600f4",
+      "region": "ram_execution",
+      "bytes": "502b",
+      "instruction": "cmp r3, #0x50"
+    },
+    {
+      "address": "0x2600f6",
+      "offset": "0x600f6",
+      "region": "ram_execution",
+      "bytes": "dbd1",
+      "instruction": "bne #0x2600b0"
+    },
+    {
+      "address": "0x2600b0",
+      "offset": "0x600b0",
+      "region": "ram_execution",
+      "bytes": "03f00705",
+      "instruction": "and r5, r3, #7"
+    },
+    {
+      "address": "0x2600b4",
+      "offset": "0x600b4",
+      "region": "ram_execution",
+      "bytes": "1f2b",
+      "instruction": "cmp r3, #0x1f"
+    },
+    {
+      "address": "0x2600b6",
+      "offset": "0x600b6",
+      "region": "ram_execution",
+      "bytes": "4fea8505",
+      "instruction": "lsl.w r5, r5, #2"
+    },
+    {
+      "address": "0x2600ba",
+      "offset": "0x600ba",
+      "region": "ram_execution",
+      "bytes": "21d8",
+      "instruction": "bhi #0x260100"
+    },
+    {
+      "address": "0x260100",
+      "offset": "0x60100",
+      "region": "ram_execution",
+      "bytes": "0b48",
+      "instruction": "ldr r0, [pc, #0x2c]"
+    },
+    {
+      "address": "0x260102",
+      "offset": "0x60102",
+      "region": "ram_execution",
+      "bytes": "a3f12002",
+      "instruction": "sub.w r2, r3, #0x20"
+    },
+    {
+      "address": "0x260106",
+      "offset": "0x60106",
+      "region": "ram_execution",
+      "bytes": "3f2b",
+      "instruction": "cmp r3, #0x3f"
+    },
+    {
+      "address": "0x260108",
+      "offset": "0x60108",
+      "region": "ram_execution",
+      "bytes": "4fead201",
+      "instruction": "lsr.w r1, r2, #3"
+    },
+    {
+      "address": "0x26010c",
+      "offset": "0x6010c",
+      "region": "ram_execution",
+      "bytes": "00eb8101",
+      "instruction": "add.w r1, r0, r1, lsl #2"
+    },
+    {
+      "address": "0x260110",
+      "offset": "0x60110",
+      "region": "ram_execution",
+      "bytes": "87bf",
+      "instruction": "ittee hi"
+    },
+    {
+      "address": "0x260112",
+      "offset": "0x60112",
+      "region": "ram_execution",
+      "bytes": "3c46",
+      "instruction": "mov r4, r7"
+    },
+    {
+      "address": "0x260114",
+      "offset": "0x60114",
+      "region": "ram_execution",
+      "bytes": "3846",
+      "instruction": "mov r0, r7"
+    },
+    {
+      "address": "0x26011a",
+      "offset": "0x6011a",
+      "region": "ram_execution",
+      "bytes": "92bf",
+      "instruction": "itee ls"
+    },
+    {
+      "address": "0x26011e",
+      "offset": "0x6011e",
+      "region": "ram_execution",
+      "bytes": "a3f14002",
+      "instruction": "sub.w r2, r3, #0x40"
+    },
+    {
+      "address": "0x260122",
+      "offset": "0x60122",
+      "region": "ram_execution",
+      "bytes": "a3f13006",
+      "instruction": "sub.w r6, r3, #0x30"
+    },
+    {
+      "address": "0x260126",
+      "offset": "0x60126",
+      "region": "ram_execution",
+      "bytes": "d0e7",
+      "instruction": "b #0x2600ca"
+    },
+    {
+      "address": "0x2600ca",
+      "offset": "0x600ca",
+      "region": "ram_execution",
+      "bytes": "d1f800b0",
+      "instruction": "ldr.w fp, [r1]"
+    },
+    {
+      "address": "0x2600ce",
+      "offset": "0x600ce",
+      "region": "ram_execution",
+      "bytes": "0cfa05f1",
+      "instruction": "lsl.w r1, ip, r5"
+    },
+    {
+      "address": "0x2600d2",
+      "offset": "0x600d2",
+      "region": "ram_execution",
+      "bytes": "01ea0b01",
+      "instruction": "and.w r1, r1, fp"
+    },
+    {
+      "address": "0x2600d6",
+      "offset": "0x600d6",
+      "region": "ram_execution",
+      "bytes": "e940",
+      "instruction": "lsrs r1, r5"
+    },
+    {
+      "address": "0x2600d8",
+      "offset": "0x600d8",
+      "region": "ram_execution",
+      "bytes": "0f29",
+      "instruction": "cmp r1, #0xf"
+    },
+    {
+      "address": "0x2600da",
+      "offset": "0x600da",
+      "region": "ram_execution",
+      "bytes": "0ad1",
+      "instruction": "bne #0x2600f2"
+    },
+    {
+      "address": "0x2600f2",
+      "offset": "0x600f2",
+      "region": "ram_execution",
+      "bytes": "0133",
+      "instruction": "adds r3, #1"
+    },
+    {
+      "address": "0x2600f4",
+      "offset": "0x600f4",
+      "region": "ram_execution",
+      "bytes": "502b",
+      "instruction": "cmp r3, #0x50"
+    },
+    {
+      "address": "0x2600f6",
+      "offset": "0x600f6",
+      "region": "ram_execution",
+      "bytes": "dbd1",
+      "instruction": "bne #0x2600b0"
+    },
+    {
+      "address": "0x2600b0",
+      "offset": "0x600b0",
+      "region": "ram_execution",
+      "bytes": "03f00705",
+      "instruction": "and r5, r3, #7"
+    },
+    {
+      "address": "0x2600b4",
+      "offset": "0x600b4",
+      "region": "ram_execution",
+      "bytes": "1f2b",
+      "instruction": "cmp r3, #0x1f"
+    },
+    {
+      "address": "0x2600b6",
+      "offset": "0x600b6",
+      "region": "ram_execution",
+      "bytes": "4fea8505",
+      "instruction": "lsl.w r5, r5, #2"
+    },
+    {
+      "address": "0x2600ba",
+      "offset": "0x600ba",
+      "region": "ram_execution",
+      "bytes": "21d8",
+      "instruction": "bhi #0x260100"
+    },
+    {
+      "address": "0x260100",
+      "offset": "0x60100",
+      "region": "ram_execution",
+      "bytes": "0b48",
+      "instruction": "ldr r0, [pc, #0x2c]"
+    },
+    {
+      "address": "0x260102",
+      "offset": "0x60102",
+      "region": "ram_execution",
+      "bytes": "a3f12002",
+      "instruction": "sub.w r2, r3, #0x20"
+    },
+    {
+      "address": "0x260106",
+      "offset": "0x60106",
+      "region": "ram_execution",
+      "bytes": "3f2b",
+      "instruction": "cmp r3, #0x3f"
+    },
+    {
+      "address": "0x260108",
+      "offset": "0x60108",
+      "region": "ram_execution",
+      "bytes": "4fead201",
+      "instruction": "lsr.w r1, r2, #3"
+    },
+    {
+      "address": "0x26010c",
+      "offset": "0x6010c",
+      "region": "ram_execution",
+      "bytes": "00eb8101",
+      "instruction": "add.w r1, r0, r1, lsl #2"
+    },
+    {
+      "address": "0x260110",
+      "offset": "0x60110",
+      "region": "ram_execution",
+      "bytes": "87bf",
+      "instruction": "ittee hi"
+    },
+    {
+      "address": "0x260112",
+      "offset": "0x60112",
+      "region": "ram_execution",
+      "bytes": "3c46",
+      "instruction": "mov r4, r7"
+    },
+    {
+      "address": "0x260114",
+      "offset": "0x60114",
+      "region": "ram_execution",
+      "bytes": "3846",
+      "instruction": "mov r0, r7"
+    },
+    {
+      "address": "0x26011a",
+      "offset": "0x6011a",
+      "region": "ram_execution",
+      "bytes": "92bf",
+      "instruction": "itee ls"
+    },
+    {
+      "address": "0x26011e",
+      "offset": "0x6011e",
+      "region": "ram_execution",
+      "bytes": "a3f14002",
+      "instruction": "sub.w r2, r3, #0x40"
+    },
+    {
+      "address": "0x260122",
+      "offset": "0x60122",
+      "region": "ram_execution",
+      "bytes": "a3f13006",
+      "instruction": "sub.w r6, r3, #0x30"
+    },
+    {
+      "address": "0x260126",
+      "offset": "0x60126",
+      "region": "ram_execution",
+      "bytes": "d0e7",
+      "instruction": "b #0x2600ca"
+    },
+    {
+      "address": "0x2600ca",
+      "offset": "0x600ca",
+      "region": "ram_execution",
+      "bytes": "d1f800b0",
+      "instruction": "ldr.w fp, [r1]"
+    },
+    {
+      "address": "0x2600ce",
+      "offset": "0x600ce",
+      "region": "ram_execution",
+      "bytes": "0cfa05f1",
+      "instruction": "lsl.w r1, ip, r5"
+    },
+    {
+      "address": "0x2600d2",
+      "offset": "0x600d2",
+      "region": "ram_execution",
+      "bytes": "01ea0b01",
+      "instruction": "and.w r1, r1, fp"
+    },
+    {
+      "address": "0x2600d6",
+      "offset": "0x600d6",
+      "region": "ram_execution",
+      "bytes": "e940",
+      "instruction": "lsrs r1, r5"
+    },
+    {
+      "address": "0x2600d8",
+      "offset": "0x600d8",
+      "region": "ram_execution",
+      "bytes": "0f29",
+      "instruction": "cmp r1, #0xf"
+    },
+    {
+      "address": "0x2600da",
+      "offset": "0x600da",
+      "region": "ram_execution",
+      "bytes": "0ad1",
+      "instruction": "bne #0x2600f2"
+    },
+    {
+      "address": "0x2600f2",
+      "offset": "0x600f2",
+      "region": "ram_execution",
+      "bytes": "0133",
+      "instruction": "adds r3, #1"
+    },
+    {
+      "address": "0x2600f4",
+      "offset": "0x600f4",
+      "region": "ram_execution",
+      "bytes": "502b",
+      "instruction": "cmp r3, #0x50"
+    },
+    {
+      "address": "0x2600f6",
+      "offset": "0x600f6",
+      "region": "ram_execution",
+      "bytes": "dbd1",
+      "instruction": "bne #0x2600b0"
+    },
+    {
+      "address": "0x2600b0",
+      "offset": "0x600b0",
+      "region": "ram_execution",
+      "bytes": "03f00705",
+      "instruction": "and r5, r3, #7"
+    },
+    {
+      "address": "0x2600b4",
+      "offset": "0x600b4",
+      "region": "ram_execution",
+      "bytes": "1f2b",
+      "instruction": "cmp r3, #0x1f"
+    },
+    {
+      "address": "0x2600b6",
+      "offset": "0x600b6",
+      "region": "ram_execution",
+      "bytes": "4fea8505",
+      "instruction": "lsl.w r5, r5, #2"
+    },
+    {
+      "address": "0x2600ba",
+      "offset": "0x600ba",
+      "region": "ram_execution",
+      "bytes": "21d8",
+      "instruction": "bhi #0x260100"
+    },
+    {
+      "address": "0x260100",
+      "offset": "0x60100",
+      "region": "ram_execution",
+      "bytes": "0b48",
+      "instruction": "ldr r0, [pc, #0x2c]"
+    },
+    {
+      "address": "0x260102",
+      "offset": "0x60102",
+      "region": "ram_execution",
+      "bytes": "a3f12002",
+      "instruction": "sub.w r2, r3, #0x20"
+    },
+    {
+      "address": "0x260106",
+      "offset": "0x60106",
+      "region": "ram_execution",
+      "bytes": "3f2b",
+      "instruction": "cmp r3, #0x3f"
+    },
+    {
+      "address": "0x260108",
+      "offset": "0x60108",
+      "region": "ram_execution",
+      "bytes": "4fead201",
+      "instruction": "lsr.w r1, r2, #3"
+    },
+    {
+      "address": "0x26010c",
+      "offset": "0x6010c",
+      "region": "ram_execution",
+      "bytes": "00eb8101",
+      "instruction": "add.w r1, r0, r1, lsl #2"
+    },
+    {
+      "address": "0x260110",
+      "offset": "0x60110",
+      "region": "ram_execution",
+      "bytes": "87bf",
+      "instruction": "ittee hi"
+    },
+    {
+      "address": "0x260112",
+      "offset": "0x60112",
+      "region": "ram_execution",
+      "bytes": "3c46",
+      "instruction": "mov r4, r7"
+    },
+    {
+      "address": "0x260114",
+      "offset": "0x60114",
+      "region": "ram_execution",
+      "bytes": "3846",
+      "instruction": "mov r0, r7"
+    },
+    {
+      "address": "0x26011a",
+      "offset": "0x6011a",
+      "region": "ram_execution",
+      "bytes": "92bf",
+      "instruction": "itee ls"
+    },
+    {
+      "address": "0x26011e",
+      "offset": "0x6011e",
+      "region": "ram_execution",
+      "bytes": "a3f14002",
+      "instruction": "sub.w r2, r3, #0x40"
+    },
+    {
+      "address": "0x260122",
+      "offset": "0x60122",
+      "region": "ram_execution",
+      "bytes": "a3f13006",
+      "instruction": "sub.w r6, r3, #0x30"
+    },
+    {
+      "address": "0x260126",
+      "offset": "0x60126",
+      "region": "ram_execution",
+      "bytes": "d0e7",
+      "instruction": "b #0x2600ca"
+    },
+    {
+      "address": "0x2600ca",
+      "offset": "0x600ca",
+      "region": "ram_execution",
+      "bytes": "d1f800b0",
+      "instruction": "ldr.w fp, [r1]"
+    },
+    {
+      "address": "0x2600ce",
+      "offset": "0x600ce",
+      "region": "ram_execution",
+      "bytes": "0cfa05f1",
+      "instruction": "lsl.w r1, ip, r5"
+    },
+    {
+      "address": "0x2600d2",
+      "offset": "0x600d2",
+      "region": "ram_execution",
+      "bytes": "01ea0b01",
+      "instruction": "and.w r1, r1, fp"
+    },
+    {
+      "address": "0x2600d6",
+      "offset": "0x600d6",
+      "region": "ram_execution",
+      "bytes": "e940",
+      "instruction": "lsrs r1, r5"
+    },
+    {
+      "address": "0x2600d8",
+      "offset": "0x600d8",
+      "region": "ram_execution",
+      "bytes": "0f29",
+      "instruction": "cmp r1, #0xf"
+    },
+    {
+      "address": "0x2600da",
+      "offset": "0x600da",
+      "region": "ram_execution",
+      "bytes": "0ad1",
+      "instruction": "bne #0x2600f2"
+    },
+    {
+      "address": "0x2600f2",
+      "offset": "0x600f2",
+      "region": "ram_execution",
+      "bytes": "0133",
+      "instruction": "adds r3, #1"
+    },
+    {
+      "address": "0x2600f4",
+      "offset": "0x600f4",
+      "region": "ram_execution",
+      "bytes": "502b",
+      "instruction": "cmp r3, #0x50"
+    },
+    {
+      "address": "0x2600f6",
+      "offset": "0x600f6",
+      "region": "ram_execution",
+      "bytes": "dbd1",
+      "instruction": "bne #0x2600b0"
+    },
+    {
+      "address": "0x2600b0",
+      "offset": "0x600b0",
+      "region": "ram_execution",
+      "bytes": "03f00705",
+      "instruction": "and r5, r3, #7"
+    },
+    {
+      "address": "0x2600b4",
+      "offset": "0x600b4",
+      "region": "ram_execution",
+      "bytes": "1f2b",
+      "instruction": "cmp r3, #0x1f"
+    },
+    {
+      "address": "0x2600b6",
+      "offset": "0x600b6",
+      "region": "ram_execution",
+      "bytes": "4fea8505",
+      "instruction": "lsl.w r5, r5, #2"
+    },
+    {
+      "address": "0x2600ba",
+      "offset": "0x600ba",
+      "region": "ram_execution",
+      "bytes": "21d8",
+      "instruction": "bhi #0x260100"
+    },
+    {
+      "address": "0x260100",
+      "offset": "0x60100",
+      "region": "ram_execution",
+      "bytes": "0b48",
+      "instruction": "ldr r0, [pc, #0x2c]"
+    },
+    {
+      "address": "0x260102",
+      "offset": "0x60102",
+      "region": "ram_execution",
+      "bytes": "a3f12002",
+      "instruction": "sub.w r2, r3, #0x20"
+    },
+    {
+      "address": "0x260106",
+      "offset": "0x60106",
+      "region": "ram_execution",
+      "bytes": "3f2b",
+      "instruction": "cmp r3, #0x3f"
+    },
+    {
+      "address": "0x260108",
+      "offset": "0x60108",
+      "region": "ram_execution",
+      "bytes": "4fead201",
+      "instruction": "lsr.w r1, r2, #3"
+    },
+    {
+      "address": "0x26010c",
+      "offset": "0x6010c",
+      "region": "ram_execution",
+      "bytes": "00eb8101",
+      "instruction": "add.w r1, r0, r1, lsl #2"
+    },
+    {
+      "address": "0x260110",
+      "offset": "0x60110",
+      "region": "ram_execution",
+      "bytes": "87bf",
+      "instruction": "ittee hi"
+    },
+    {
+      "address": "0x260112",
+      "offset": "0x60112",
+      "region": "ram_execution",
+      "bytes": "3c46",
+      "instruction": "mov r4, r7"
+    },
+    {
+      "address": "0x260114",
+      "offset": "0x60114",
+      "region": "ram_execution",
+      "bytes": "3846",
+      "instruction": "mov r0, r7"
+    },
+    {
+      "address": "0x26011a",
+      "offset": "0x6011a",
+      "region": "ram_execution",
+      "bytes": "92bf",
+      "instruction": "itee ls"
+    },
+    {
+      "address": "0x26011e",
+      "offset": "0x6011e",
+      "region": "ram_execution",
+      "bytes": "a3f14002",
+      "instruction": "sub.w r2, r3, #0x40"
+    },
+    {
+      "address": "0x260122",
+      "offset": "0x60122",
+      "region": "ram_execution",
+      "bytes": "a3f13006",
+      "instruction": "sub.w r6, r3, #0x30"
+    },
+    {
+      "address": "0x260126",
+      "offset": "0x60126",
+      "region": "ram_execution",
+      "bytes": "d0e7",
+      "instruction": "b #0x2600ca"
+    },
+    {
+      "address": "0x2600ca",
+      "offset": "0x600ca",
+      "region": "ram_execution",
+      "bytes": "d1f800b0",
+      "instruction": "ldr.w fp, [r1]"
+    },
+    {
+      "address": "0x2600ce",
+      "offset": "0x600ce",
+      "region": "ram_execution",
+      "bytes": "0cfa05f1",
+      "instruction": "lsl.w r1, ip, r5"
+    },
+    {
+      "address": "0x2600d2",
+      "offset": "0x600d2",
+      "region": "ram_execution",
+      "bytes": "01ea0b01",
+      "instruction": "and.w r1, r1, fp"
+    },
+    {
+      "address": "0x2600d6",
+      "offset": "0x600d6",
+      "region": "ram_execution",
+      "bytes": "e940",
+      "instruction": "lsrs r1, r5"
+    },
+    {
+      "address": "0x2600d8",
+      "offset": "0x600d8",
+      "region": "ram_execution",
+      "bytes": "0f29",
+      "instruction": "cmp r1, #0xf"
+    },
+    {
+      "address": "0x2600da",
+      "offset": "0x600da",
+      "region": "ram_execution",
+      "bytes": "0ad1",
+      "instruction": "bne #0x2600f2"
+    },
+    {
+      "address": "0x2600f2",
+      "offset": "0x600f2",
+      "region": "ram_execution",
+      "bytes": "0133",
+      "instruction": "adds r3, #1"
+    },
+    {
+      "address": "0x2600f4",
+      "offset": "0x600f4",
+      "region": "ram_execution",
+      "bytes": "502b",
+      "instruction": "cmp r3, #0x50"
+    },
+    {
+      "address": "0x2600f6",
+      "offset": "0x600f6",
+      "region": "ram_execution",
+      "bytes": "dbd1",
+      "instruction": "bne #0x2600b0"
+    },
+    {
+      "address": "0x2600b0",
+      "offset": "0x600b0",
+      "region": "ram_execution",
+      "bytes": "03f00705",
+      "instruction": "and r5, r3, #7"
+    },
+    {
+      "address": "0x2600b4",
+      "offset": "0x600b4",
+      "region": "ram_execution",
+      "bytes": "1f2b",
+      "instruction": "cmp r3, #0x1f"
+    },
+    {
+      "address": "0x2600b6",
+      "offset": "0x600b6",
+      "region": "ram_execution",
+      "bytes": "4fea8505",
+      "instruction": "lsl.w r5, r5, #2"
+    },
+    {
+      "address": "0x2600ba",
+      "offset": "0x600ba",
+      "region": "ram_execution",
+      "bytes": "21d8",
+      "instruction": "bhi #0x260100"
+    },
+    {
+      "address": "0x260100",
+      "offset": "0x60100",
+      "region": "ram_execution",
+      "bytes": "0b48",
+      "instruction": "ldr r0, [pc, #0x2c]"
+    },
+    {
+      "address": "0x260102",
+      "offset": "0x60102",
+      "region": "ram_execution",
+      "bytes": "a3f12002",
+      "instruction": "sub.w r2, r3, #0x20"
+    },
+    {
+      "address": "0x260106",
+      "offset": "0x60106",
+      "region": "ram_execution",
+      "bytes": "3f2b",
+      "instruction": "cmp r3, #0x3f"
+    },
+    {
+      "address": "0x260108",
+      "offset": "0x60108",
+      "region": "ram_execution",
+      "bytes": "4fead201",
+      "instruction": "lsr.w r1, r2, #3"
+    },
+    {
+      "address": "0x26010c",
+      "offset": "0x6010c",
+      "region": "ram_execution",
+      "bytes": "00eb8101",
+      "instruction": "add.w r1, r0, r1, lsl #2"
+    },
+    {
+      "address": "0x260110",
+      "offset": "0x60110",
+      "region": "ram_execution",
+      "bytes": "87bf",
+      "instruction": "ittee hi"
+    },
+    {
+      "address": "0x260112",
+      "offset": "0x60112",
+      "region": "ram_execution",
+      "bytes": "3c46",
+      "instruction": "mov r4, r7"
+    },
+    {
+      "address": "0x260114",
+      "offset": "0x60114",
+      "region": "ram_execution",
+      "bytes": "3846",
+      "instruction": "mov r0, r7"
+    },
+    {
+      "address": "0x26011a",
+      "offset": "0x6011a",
+      "region": "ram_execution",
+      "bytes": "92bf",
+      "instruction": "itee ls"
+    },
+    {
+      "address": "0x26011e",
+      "offset": "0x6011e",
+      "region": "ram_execution",
+      "bytes": "a3f14002",
+      "instruction": "sub.w r2, r3, #0x40"
+    },
+    {
+      "address": "0x260122",
+      "offset": "0x60122",
+      "region": "ram_execution",
+      "bytes": "a3f13006",
+      "instruction": "sub.w r6, r3, #0x30"
+    },
+    {
+      "address": "0x260126",
+      "offset": "0x60126",
+      "region": "ram_execution",
+      "bytes": "d0e7",
+      "instruction": "b #0x2600ca"
+    },
+    {
+      "address": "0x2600ca",
+      "offset": "0x600ca",
+      "region": "ram_execution",
+      "bytes": "d1f800b0",
+      "instruction": "ldr.w fp, [r1]"
+    },
+    {
+      "address": "0x2600ce",
+      "offset": "0x600ce",
+      "region": "ram_execution",
+      "bytes": "0cfa05f1",
+      "instruction": "lsl.w r1, ip, r5"
+    },
+    {
+      "address": "0x2600d2",
+      "offset": "0x600d2",
+      "region": "ram_execution",
+      "bytes": "01ea0b01",
+      "instruction": "and.w r1, r1, fp"
+    },
+    {
+      "address": "0x2600d6",
+      "offset": "0x600d6",
+      "region": "ram_execution",
+      "bytes": "e940",
+      "instruction": "lsrs r1, r5"
+    },
+    {
+      "address": "0x2600d8",
+      "offset": "0x600d8",
+      "region": "ram_execution",
+      "bytes": "0f29",
+      "instruction": "cmp r1, #0xf"
+    },
+    {
+      "address": "0x2600da",
+      "offset": "0x600da",
+      "region": "ram_execution",
+      "bytes": "0ad1",
+      "instruction": "bne #0x2600f2"
+    },
+    {
+      "address": "0x2600f2",
+      "offset": "0x600f2",
+      "region": "ram_execution",
+      "bytes": "0133",
+      "instruction": "adds r3, #1"
+    },
+    {
+      "address": "0x2600f4",
+      "offset": "0x600f4",
+      "region": "ram_execution",
+      "bytes": "502b",
+      "instruction": "cmp r3, #0x50"
+    },
+    {
+      "address": "0x2600f6",
+      "offset": "0x600f6",
+      "region": "ram_execution",
+      "bytes": "dbd1",
+      "instruction": "bne #0x2600b0"
+    },
+    {
+      "address": "0x2600b0",
+      "offset": "0x600b0",
+      "region": "ram_execution",
+      "bytes": "03f00705",
+      "instruction": "and r5, r3, #7"
+    },
+    {
+      "address": "0x2600b4",
+      "offset": "0x600b4",
+      "region": "ram_execution",
+      "bytes": "1f2b",
+      "instruction": "cmp r3, #0x1f"
+    },
+    {
+      "address": "0x2600b6",
+      "offset": "0x600b6",
+      "region": "ram_execution",
+      "bytes": "4fea8505",
+      "instruction": "lsl.w r5, r5, #2"
+    },
+    {
+      "address": "0x2600ba",
+      "offset": "0x600ba",
+      "region": "ram_execution",
+      "bytes": "21d8",
+      "instruction": "bhi #0x260100"
+    },
+    {
+      "address": "0x260100",
+      "offset": "0x60100",
+      "region": "ram_execution",
+      "bytes": "0b48",
+      "instruction": "ldr r0, [pc, #0x2c]"
+    },
+    {
+      "address": "0x260102",
+      "offset": "0x60102",
+      "region": "ram_execution",
+      "bytes": "a3f12002",
+      "instruction": "sub.w r2, r3, #0x20"
+    },
+    {
+      "address": "0x260106",
+      "offset": "0x60106",
+      "region": "ram_execution",
+      "bytes": "3f2b",
+      "instruction": "cmp r3, #0x3f"
+    },
+    {
+      "address": "0x260108",
+      "offset": "0x60108",
+      "region": "ram_execution",
+      "bytes": "4fead201",
+      "instruction": "lsr.w r1, r2, #3"
+    },
+    {
+      "address": "0x26010c",
+      "offset": "0x6010c",
+      "region": "ram_execution",
+      "bytes": "00eb8101",
+      "instruction": "add.w r1, r0, r1, lsl #2"
+    },
+    {
+      "address": "0x260110",
+      "offset": "0x60110",
+      "region": "ram_execution",
+      "bytes": "87bf",
+      "instruction": "ittee hi"
+    },
+    {
+      "address": "0x260112",
+      "offset": "0x60112",
+      "region": "ram_execution",
+      "bytes": "3c46",
+      "instruction": "mov r4, r7"
+    },
+    {
+      "address": "0x260114",
+      "offset": "0x60114",
+      "region": "ram_execution",
+      "bytes": "3846",
+      "instruction": "mov r0, r7"
+    },
+    {
+      "address": "0x26011a",
+      "offset": "0x6011a",
+      "region": "ram_execution",
+      "bytes": "92bf",
+      "instruction": "itee ls"
+    },
+    {
+      "address": "0x26011e",
+      "offset": "0x6011e",
+      "region": "ram_execution",
+      "bytes": "a3f14002",
+      "instruction": "sub.w r2, r3, #0x40"
+    },
+    {
+      "address": "0x260122",
+      "offset": "0x60122",
+      "region": "ram_execution",
+      "bytes": "a3f13006",
+      "instruction": "sub.w r6, r3, #0x30"
+    },
+    {
+      "address": "0x260126",
+      "offset": "0x60126",
+      "region": "ram_execution",
+      "bytes": "d0e7",
+      "instruction": "b #0x2600ca"
+    },
+    {
+      "address": "0x2600ca",
+      "offset": "0x600ca",
+      "region": "ram_execution",
+      "bytes": "d1f800b0",
+      "instruction": "ldr.w fp, [r1]"
+    },
+    {
+      "address": "0x2600ce",
+      "offset": "0x600ce",
+      "region": "ram_execution",
+      "bytes": "0cfa05f1",
+      "instruction": "lsl.w r1, ip, r5"
+    },
+    {
+      "address": "0x2600d2",
+      "offset": "0x600d2",
+      "region": "ram_execution",
+      "bytes": "01ea0b01",
+      "instruction": "and.w r1, r1, fp"
+    },
+    {
+      "address": "0x2600d6",
+      "offset": "0x600d6",
+      "region": "ram_execution",
+      "bytes": "e940",
+      "instruction": "lsrs r1, r5"
+    },
+    {
+      "address": "0x2600d8",
+      "offset": "0x600d8",
+      "region": "ram_execution",
+      "bytes": "0f29",
+      "instruction": "cmp r1, #0xf"
+    },
+    {
+      "address": "0x2600da",
+      "offset": "0x600da",
+      "region": "ram_execution",
+      "bytes": "0ad1",
+      "instruction": "bne #0x2600f2"
+    },
+    {
+      "address": "0x2600f2",
+      "offset": "0x600f2",
+      "region": "ram_execution",
+      "bytes": "0133",
+      "instruction": "adds r3, #1"
+    },
+    {
+      "address": "0x2600f4",
+      "offset": "0x600f4",
+      "region": "ram_execution",
+      "bytes": "502b",
+      "instruction": "cmp r3, #0x50"
+    },
+    {
+      "address": "0x2600f6",
+      "offset": "0x600f6",
+      "region": "ram_execution",
+      "bytes": "dbd1",
+      "instruction": "bne #0x2600b0"
+    },
+    {
+      "address": "0x2600f8",
+      "offset": "0x600f8",
+      "region": "ram_execution",
+      "bytes": "bde8f04f",
+      "instruction": "pop.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}"
+    },
+    {
+      "address": "0x2600fc",
+      "offset": "0x600fc",
+      "region": "ram_execution",
+      "bytes": "fff7a6bf",
+      "instruction": "b.w #0x26004c"
+    },
+    {
+      "address": "0x26004c",
+      "offset": "0x6004c",
+      "region": "ram_execution",
+      "bytes": "0d4b",
+      "instruction": "ldr r3, [pc, #0x34]"
+    },
+    {
+      "address": "0x26004e",
+      "offset": "0x6004e",
+      "region": "ram_execution",
+      "bytes": "da6f",
+      "instruction": "ldr r2, [r3, #0x7c]"
+    },
+    {
+      "address": "0x260050",
+      "offset": "0x60050",
+      "region": "ram_execution",
+      "bytes": "02f07f42",
+      "instruction": "and r2, r2, #0xff000000"
+    },
+    {
+      "address": "0x260054",
+      "offset": "0x60054",
+      "region": "ram_execution",
+      "bytes": "42f07712",
+      "instruction": "orr r2, r2, #0x770077"
+    },
+    {
+      "address": "0x260058",
+      "offset": "0x60058",
+      "region": "ram_execution",
+      "bytes": "42f4ee42",
+      "instruction": "orr r2, r2, #0x7700"
+    },
+    {
+      "address": "0x26005c",
+      "offset": "0x6005c",
+      "region": "ram_execution",
+      "bytes": "da67",
+      "instruction": "str r2, [r3, #0x7c]"
+    },
+    {
+      "address": "0x26005e",
+      "offset": "0x6005e",
+      "region": "ram_execution",
+      "bytes": "d3f89420",
+      "instruction": "ldr.w r2, [r3, #0x94]"
+    },
+    {
+      "address": "0x260062",
+      "offset": "0x60062",
+      "region": "ram_execution",
+      "bytes": "22f03f02",
+      "instruction": "bic r2, r2, #0x3f"
+    },
+    {
+      "address": "0x260066",
+      "offset": "0x60066",
+      "region": "ram_execution",
+      "bytes": "c3f89420",
+      "instruction": "str.w r2, [r3, #0x94]"
+    },
+    {
+      "address": "0x26006a",
+      "offset": "0x6006a",
+      "region": "ram_execution",
+      "bytes": "d3f89820",
+      "instruction": "ldr.w r2, [r3, #0x98]"
+    },
+    {
+      "address": "0x26006e",
+      "offset": "0x6006e",
+      "region": "ram_execution",
+      "bytes": "22f03f02",
+      "instruction": "bic r2, r2, #0x3f"
+    },
+    {
+      "address": "0x260072",
+      "offset": "0x60072",
+      "region": "ram_execution",
+      "bytes": "c3f89820",
+      "instruction": "str.w r2, [r3, #0x98]"
+    },
+    {
+      "address": "0x260076",
+      "offset": "0x60076",
+      "region": "ram_execution",
+      "bytes": "d3f8ac20",
+      "instruction": "ldr.w r2, [r3, #0xac]"
+    },
+    {
+      "address": "0x26007a",
+      "offset": "0x6007a",
+      "region": "ram_execution",
+      "bytes": "42f47052",
+      "instruction": "orr r2, r2, #0x3c00"
+    },
+    {
+      "address": "0x26007e",
+      "offset": "0x6007e",
+      "region": "ram_execution",
+      "bytes": "c3f8ac20",
+      "instruction": "str.w r2, [r3, #0xac]"
+    },
+    {
+      "address": "0x260082",
+      "offset": "0x60082",
+      "region": "ram_execution",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0xc101710",
+      "offset": "0x1710",
+      "region": "image",
+      "bytes": "00f056f8",
+      "instruction": "bl #0xc1017c0"
+    },
+    {
+      "address": "0xc1017c0",
+      "offset": "0x17c0",
+      "region": "image",
+      "bytes": "10b5",
+      "instruction": "push {r4, lr}"
+    },
+    {
+      "address": "0xc1017c2",
+      "offset": "0x17c2",
+      "region": "image",
+      "bytes": "8224",
+      "instruction": "movs r4, #0x82"
+    },
+    {
+      "address": "0xc1017c4",
+      "offset": "0x17c4",
+      "region": "image",
+      "bytes": "fff73cfc",
+      "instruction": "bl #0xc101040"
+    },
+    {
+      "address": "0xc101040",
+      "offset": "0x1040",
+      "region": "image",
+      "bytes": "08b5",
+      "instruction": "push {r3, lr}"
+    },
+    {
+      "address": "0xc101042",
+      "offset": "0x1042",
+      "region": "image",
+      "bytes": "00f0fdfb",
+      "instruction": "bl #0xc101840"
+    },
+    {
+      "address": "0xc101840",
+      "offset": "0x1840",
+      "region": "image",
+      "bytes": "5ff800f0",
+      "instruction": "ldr.w pc, [pc, #-0x0]"
+    },
+    {
+      "address": "0x264ce0",
+      "offset": "0x64ce0",
+      "region": "ram_execution",
+      "bytes": "eff31180",
+      "instruction": "mrs r0, basepri"
+    },
+    {
+      "address": "0x264ce4",
+      "offset": "0x64ce4",
+      "region": "ram_execution",
+      "bytes": "8023",
+      "instruction": "movs r3, #0x80"
+    },
+    {
+      "address": "0x264ce6",
+      "offset": "0x64ce6",
+      "region": "ram_execution",
+      "bytes": "83f31188",
+      "instruction": "msr basepri, r3"
+    },
+    {
+      "address": "0x264cea",
+      "offset": "0x64cea",
+      "region": "ram_execution",
+      "bytes": "c0b2",
+      "instruction": "uxtb r0, r0"
+    },
+    {
+      "address": "0x264cec",
+      "offset": "0x64cec",
+      "region": "ram_execution",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0xc101046",
+      "offset": "0x1046",
+      "region": "image",
+      "bytes": "044a",
+      "instruction": "ldr r2, [pc, #0x10]"
+    },
+    {
+      "address": "0xc101048",
+      "offset": "0x1048",
+      "region": "image",
+      "bytes": "d369",
+      "instruction": "ldr r3, [r2, #0x1c]"
+    },
+    {
+      "address": "0xc10104a",
+      "offset": "0x104a",
+      "region": "image",
+      "bytes": "23f48023",
+      "instruction": "bic r3, r3, #0x40000"
+    },
+    {
+      "address": "0xc10104e",
+      "offset": "0x104e",
+      "region": "image",
+      "bytes": "d361",
+      "instruction": "str r3, [r2, #0x1c]"
+    },
+    {
+      "address": "0xc101050",
+      "offset": "0x1050",
+      "region": "image",
+      "bytes": "bde80840",
+      "instruction": "pop.w {r3, lr}"
+    },
+    {
+      "address": "0xc101054",
+      "offset": "0x1054",
+      "region": "image",
+      "bytes": "00f050bc",
+      "instruction": "b.w #0xc1018f8"
+    },
+    {
+      "address": "0xc1018f8",
+      "offset": "0x18f8",
+      "region": "image",
+      "bytes": "5ff800f0",
+      "instruction": "ldr.w pc, [pc, #-0x0]"
+    },
+    {
+      "address": "0x264cee",
+      "offset": "0x64cee",
+      "region": "ram_execution",
+      "bytes": "c0b2",
+      "instruction": "uxtb r0, r0"
+    },
+    {
+      "address": "0x264cf0",
+      "offset": "0x64cf0",
+      "region": "ram_execution",
+      "bytes": "80f31188",
+      "instruction": "msr basepri, r0"
+    },
+    {
+      "address": "0x264cf4",
+      "offset": "0x64cf4",
+      "region": "ram_execution",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0xc1017c8",
+      "offset": "0x17c8",
+      "region": "image",
+      "bytes": "044b",
+      "instruction": "ldr r3, [pc, #0x10]"
+    },
+    {
+      "address": "0xc1017ca",
+      "offset": "0x17ca",
+      "region": "image",
+      "bytes": "9c60",
+      "instruction": "str r4, [r3, #8]"
+    },
+    {
+      "address": "0xc1017cc",
+      "offset": "0x17cc",
+      "region": "image",
+      "bytes": "00f02cf8",
+      "instruction": "bl #0xc101828"
+    },
+    {
+      "address": "0xc101828",
+      "offset": "0x1828",
+      "region": "image",
+      "bytes": "5ff800f0",
+      "instruction": "ldr.w pc, [pc, #-0x0]"
+    },
+    {
+      "address": "0x264f50",
+      "offset": "0x64f50",
+      "region": "ram_execution",
+      "bytes": "08b5",
+      "instruction": "push {r3, lr}"
+    },
+    {
+      "address": "0x264f52",
+      "offset": "0x64f52",
+      "region": "ram_execution",
+      "bytes": "fff7c5fe",
+      "instruction": "bl #0x264ce0"
+    },
+    {
+      "address": "0x264ce0",
+      "offset": "0x64ce0",
+      "region": "ram_execution",
+      "bytes": "eff31180",
+      "instruction": "mrs r0, basepri"
+    },
+    {
+      "address": "0x264ce4",
+      "offset": "0x64ce4",
+      "region": "ram_execution",
+      "bytes": "8023",
+      "instruction": "movs r3, #0x80"
+    },
+    {
+      "address": "0x264ce6",
+      "offset": "0x64ce6",
+      "region": "ram_execution",
+      "bytes": "83f31188",
+      "instruction": "msr basepri, r3"
+    },
+    {
+      "address": "0x264cea",
+      "offset": "0x64cea",
+      "region": "ram_execution",
+      "bytes": "c0b2",
+      "instruction": "uxtb r0, r0"
+    },
+    {
+      "address": "0x264cec",
+      "offset": "0x64cec",
+      "region": "ram_execution",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0x264f56",
+      "offset": "0x64f56",
+      "region": "ram_execution",
+      "bytes": "4ff08042",
+      "instruction": "mov.w r2, #0x40000000"
+    },
+    {
+      "address": "0x264f5a",
+      "offset": "0x64f5a",
+      "region": "ram_execution",
+      "bytes": "d36d",
+      "instruction": "ldr r3, [r2, #0x5c]"
+    },
+    {
+      "address": "0x264f5c",
+      "offset": "0x64f5c",
+      "region": "ram_execution",
+      "bytes": "43f48063",
+      "instruction": "orr r3, r3, #0x400"
+    },
+    {
+      "address": "0x264f60",
+      "offset": "0x64f60",
+      "region": "ram_execution",
+      "bytes": "d365",
+      "instruction": "str r3, [r2, #0x5c]"
+    },
+    {
+      "address": "0x264f62",
+      "offset": "0x64f62",
+      "region": "ram_execution",
+      "bytes": "bde80840",
+      "instruction": "pop.w {r3, lr}"
+    },
+    {
+      "address": "0x264f66",
+      "offset": "0x64f66",
+      "region": "ram_execution",
+      "bytes": "fff7c2be",
+      "instruction": "b.w #0x264cee"
+    },
+    {
+      "address": "0x264cee",
+      "offset": "0x64cee",
+      "region": "ram_execution",
+      "bytes": "c0b2",
+      "instruction": "uxtb r0, r0"
+    },
+    {
+      "address": "0x264cf0",
+      "offset": "0x64cf0",
+      "region": "ram_execution",
+      "bytes": "80f31188",
+      "instruction": "msr basepri, r0"
+    },
+    {
+      "address": "0x264cf4",
+      "offset": "0x64cf4",
+      "region": "ram_execution",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0xc1017d0",
+      "offset": "0x17d0",
+      "region": "image",
+      "bytes": "034b",
+      "instruction": "ldr r3, [pc, #0xc]"
+    },
+    {
+      "address": "0xc1017d2",
+      "offset": "0x17d2",
+      "region": "image",
+      "bytes": "9c60",
+      "instruction": "str r4, [r3, #8]"
+    },
+    {
+      "address": "0xc1017d4",
+      "offset": "0x17d4",
+      "region": "image",
+      "bytes": "bde81040",
+      "instruction": "pop.w {r4, lr}"
+    },
+    {
+      "address": "0xc1017d8",
+      "offset": "0x17d8",
+      "region": "image",
+      "bytes": "00f00eb8",
+      "instruction": "b.w #0xc1017f8"
+    },
+    {
+      "address": "0xc1017f8",
+      "offset": "0x17f8",
+      "region": "image",
+      "bytes": "5ff800f0",
+      "instruction": "ldr.w pc, [pc, #-0x0]"
+    },
+    {
+      "address": "0x264f6a",
+      "offset": "0x64f6a",
+      "region": "ram_execution",
+      "bytes": "08b5",
+      "instruction": "push {r3, lr}"
+    },
+    {
+      "address": "0x264f6c",
+      "offset": "0x64f6c",
+      "region": "ram_execution",
+      "bytes": "fff7b8fe",
+      "instruction": "bl #0x264ce0"
+    },
+    {
+      "address": "0x264ce0",
+      "offset": "0x64ce0",
+      "region": "ram_execution",
+      "bytes": "eff31180",
+      "instruction": "mrs r0, basepri"
+    },
+    {
+      "address": "0x264ce4",
+      "offset": "0x64ce4",
+      "region": "ram_execution",
+      "bytes": "8023",
+      "instruction": "movs r3, #0x80"
+    },
+    {
+      "address": "0x264ce6",
+      "offset": "0x64ce6",
+      "region": "ram_execution",
+      "bytes": "83f31188",
+      "instruction": "msr basepri, r3"
+    },
+    {
+      "address": "0x264cea",
+      "offset": "0x64cea",
+      "region": "ram_execution",
+      "bytes": "c0b2",
+      "instruction": "uxtb r0, r0"
+    },
+    {
+      "address": "0x264cec",
+      "offset": "0x64cec",
+      "region": "ram_execution",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0x264f70",
+      "offset": "0x64f70",
+      "region": "ram_execution",
+      "bytes": "4ff08042",
+      "instruction": "mov.w r2, #0x40000000"
+    },
+    {
+      "address": "0x264f74",
+      "offset": "0x64f74",
+      "region": "ram_execution",
+      "bytes": "d36d",
+      "instruction": "ldr r3, [r2, #0x5c]"
+    },
+    {
+      "address": "0x264f76",
+      "offset": "0x64f76",
+      "region": "ram_execution",
+      "bytes": "43f40063",
+      "instruction": "orr r3, r3, #0x800"
+    },
+    {
+      "address": "0x264f7a",
+      "offset": "0x64f7a",
+      "region": "ram_execution",
+      "bytes": "d365",
+      "instruction": "str r3, [r2, #0x5c]"
+    },
+    {
+      "address": "0x264f7c",
+      "offset": "0x64f7c",
+      "region": "ram_execution",
+      "bytes": "bde80840",
+      "instruction": "pop.w {r3, lr}"
+    },
+    {
+      "address": "0x264f80",
+      "offset": "0x64f80",
+      "region": "ram_execution",
+      "bytes": "fff7b5be",
+      "instruction": "b.w #0x264cee"
+    },
+    {
+      "address": "0x264cee",
+      "offset": "0x64cee",
+      "region": "ram_execution",
+      "bytes": "c0b2",
+      "instruction": "uxtb r0, r0"
+    },
+    {
+      "address": "0x264cf0",
+      "offset": "0x64cf0",
+      "region": "ram_execution",
+      "bytes": "80f31188",
+      "instruction": "msr basepri, r0"
+    },
+    {
+      "address": "0x264cf4",
+      "offset": "0x64cf4",
+      "region": "ram_execution",
+      "bytes": "7047",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0xc101714",
+      "offset": "0x1714",
+      "region": "image",
+      "bytes": "fff770ff",
+      "instruction": "bl #0xc1015f8"
+    },
+    {
+      "address": "0xc1015f8",
+      "offset": "0x15f8",
+      "region": "image",
+      "bytes": "034b",
+      "instruction": "ldr r3, [pc, #0xc]"
+    },
+    {
+      "address": "0xc1015fa",
+      "offset": "0x15fa",
+      "region": "image",
+      "bytes": "044a",
+      "instruction": "ldr r2, [pc, #0x10]"
+    },
+    {
+      "address": "0xc1015fc",
+      "offset": "0x15fc",
+      "region": "image",
+      "bytes": "9b6b",
+      "instruction": "ldr r3, [r3, #0x38]"
+    }
+  ],
+  "mmio_events": [
+    {
+      "kind": "aon_read",
+      "address": "0x4008005c",
+      "value": "0x0",
+      "pc": "0xc1012ce"
+    },
+    {
+      "kind": "aon_write",
+      "address": "0x4008005c",
+      "value": "0x2",
+      "pc": "0xc1012d8"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed08",
+      "value": "0x2005c000",
+      "pc": "0xc1000b2"
+    },
+    {
+      "kind": "core_read",
+      "address": "0xe000ed88",
+      "value": "0x0",
+      "pc": "0xc100152"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed88",
+      "value": "0xf00000",
+      "pc": "0xc10015a"
+    },
+    {
+      "kind": "core_read",
+      "address": "0xe000ed14",
+      "value": "0x0",
+      "pc": "0xc10015e"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed14",
+      "value": "0x10",
+      "pc": "0xc100164"
+    },
+    {
+      "kind": "core_read",
+      "address": "0xe000ed14",
+      "value": "0x10",
+      "pc": "0xc100166"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed14",
+      "value": "0x410",
+      "pc": "0xc10016c"
+    },
+    {
+      "kind": "core_read",
+      "address": "0xe000ed14",
+      "value": "0x410",
+      "pc": "0xc10016e"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed14",
+      "value": "0x410",
+      "pc": "0xc100174"
+    },
+    {
+      "kind": "core_read",
+      "address": "0xe000ed24",
+      "value": "0x0",
+      "pc": "0xc100176"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed24",
+      "value": "0x40000",
+      "pc": "0xc10017c"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed1a",
+      "value": "0xa0",
+      "pc": "0xc100180"
+    },
+    {
+      "kind": "core_read",
+      "address": "0xe000ed24",
+      "value": "0x40000",
+      "pc": "0xc100182"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed24",
+      "value": "0x60000",
+      "pc": "0xc100188"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed19",
+      "value": "0xa0",
+      "pc": "0xc10018a"
+    },
+    {
+      "kind": "core_read",
+      "address": "0xe000ed24",
+      "value": "0x60000",
+      "pc": "0xc10018c"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed24",
+      "value": "0x70000",
+      "pc": "0xc100192"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed18",
+      "value": "0xa0",
+      "pc": "0xc100194"
+    },
+    {
+      "kind": "core_write",
+      "address": "0xe000ed20",
+      "value": "0xa0",
+      "pc": "0xc100196"
+    },
+    {
+      "kind": "cache_read",
+      "address": "0x7ffa000",
+      "value": "0x0",
+      "pc": "0xc101684"
+    },
+    {
+      "kind": "cache_write",
+      "address": "0x7ffa004",
+      "value": "0x1",
+      "pc": "0xc101690"
+    },
+    {
+      "kind": "cache_write",
+      "address": "0x7ffa000",
+      "value": "0x1",
+      "pc": "0xc101694"
+    },
+    {
+      "kind": "aon_read",
+      "address": "0x40080000",
+      "value": "0xe0000",
+      "pc": "0xc10154a"
+    },
+    {
+      "kind": "cache_read",
+      "address": "0x7ffc008",
+      "value": "0x0",
+      "pc": "0xc1016ba"
+    },
+    {
+      "kind": "cache_write",
+      "address": "0x7ffc008",
+      "value": "0x2",
+      "pc": "0xc1016cc"
+    },
+    {
+      "kind": "cache_read",
+      "address": "0x7ffc000",
+      "value": "0x0",
+      "pc": "0xc101684"
+    },
+    {
+      "kind": "cache_write",
+      "address": "0x7ffc004",
+      "value": "0x1",
+      "pc": "0xc101690"
+    },
+    {
+      "kind": "cache_write",
+      "address": "0x7ffc000",
+      "value": "0x1",
+      "pc": "0xc101694"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x260092"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x400860c4",
+      "value": "0x0",
+      "pc": "0x2600ac"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086004",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0x0",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0x100",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0x100",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0x300",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0x300",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0x700",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0x700",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0xf00",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0xf00",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0x1f00",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0x1f00",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0x3f00",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0x3f00",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0x7f00",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086008",
+      "value": "0xffffffff",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600de"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008602c",
+      "value": "0x0",
+      "pc": "0x2600e8"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086030",
+      "value": "0x7f00",
+      "pc": "0x2600ea"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086030",
+      "value": "0xff00",
+      "pc": "0x2600f0"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008600c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086010",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086080",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086084",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086088",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008608c",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086090",
+      "value": "0x0",
+      "pc": "0x2600ca"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x4008607c",
+      "value": "0x0",
+      "pc": "0x26004e"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x4008607c",
+      "value": "0x777777",
+      "pc": "0x26005c"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086094",
+      "value": "0x0",
+      "pc": "0x26005e"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086094",
+      "value": "0x0",
+      "pc": "0x260066"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x40086098",
+      "value": "0x0",
+      "pc": "0x26006a"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x40086098",
+      "value": "0x0",
+      "pc": "0x260072"
+    },
+    {
+      "kind": "iomux_read",
+      "address": "0x400860ac",
+      "value": "0x0",
+      "pc": "0x260076"
+    },
+    {
+      "kind": "iomux_write",
+      "address": "0x400860ac",
+      "value": "0x3c00",
+      "pc": "0x26007e"
+    },
+    {
+      "kind": "aon_read",
+      "address": "0x4008001c",
+      "value": "0x0",
+      "pc": "0xc101048"
+    },
+    {
+      "kind": "aon_write",
+      "address": "0x4008001c",
+      "value": "0x0",
+      "pc": "0xc10104e"
+    },
+    {
+      "kind": "timer_write",
+      "address": "0x40084008",
+      "value": "0x82",
+      "pc": "0xc1017ca"
+    },
+    {
+      "kind": "cmu_read",
+      "address": "0x4000005c",
+      "value": "0x0",
+      "pc": "0x264f5a"
+    },
+    {
+      "kind": "cmu_write",
+      "address": "0x4000005c",
+      "value": "0x400",
+      "pc": "0x264f60"
+    },
+    {
+      "kind": "timer_write",
+      "address": "0x40003008",
+      "value": "0x82",
+      "pc": "0xc1017d2"
+    },
+    {
+      "kind": "cmu_read",
+      "address": "0x4000005c",
+      "value": "0x400",
+      "pc": "0x264f74"
+    },
+    {
+      "kind": "cmu_write",
+      "address": "0x4000005c",
+      "value": "0xc00",
+      "pc": "0x264f7a"
+    }
+  ],
+  "mmio_event_count": 160,
+  "mmio_model": "Explicit plain 32-bit storage; hardware side effects are not simulated",
+  "full_device_emulation": false,
+  "assumptions": [
+    "Image base inferred from startup literal at file offset 0x64: 0x0c100015 points to Thumb entry at offset 0x14.",
+    "Stack pointer comes from startup literal at offset 0x68. RAM extent is an experimental model, not a verified complete memory map.",
+    "Read-only image alias at 0x2c100000 inferred from matching string pointers. Debugger can opt into partial SCB/NVIC, cache, AON, IOMUX and instruction-clock timers; ROM, interrupt delivery, physical clock behavior, display, Bluetooth and sensors are absent.",
+    "Optional shared execution alias at 0x00200000 is inferred from relocation and branch targets and corroborated by BES-family mapping. AON CHIP_ID inputs are experimental, not measured on the bracelet.",
+    "Demo models a single 32-bit register as plain read/write storage; its real hardware side effects are unknown.",
+    "A returned function is not evidence that the operating system boots or that modified firmware can be flashed."
+  ],
+  "system_control": {
+    "registers": {
+      "VTOR": "0x2005c000",
+      "SCR": "0x0",
+      "CCR": "0x410",
+      "SHCSR": "0x70000",
+      "CPACR": "0xf00000"
+    },
+    "system_priorities": [
+      160,
+      160,
+      160,
+      0,
+      0,
+      0,
+      0,
+      0,
+      160,
+      0,
+      0,
+      0
+    ],
+    "irq_priorities": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "irq_count": 78,
+    "enabled": [
+      "0x0",
+      "0x0",
+      "0x0"
+    ],
+    "pending": [
+      "0x0",
+      "0x0",
+      "0x0"
+    ],
+    "ready_irqs": [],
+    "limitations": [
+      "Initial configuration values are zero for this experiment, not verified chip reset values.",
+      "78 external IRQs inferred from the 94-entry startup table; not a verified hardware inventory.",
+      "All 8 priority bits retained; implemented priority width is not established.",
+      "No exception entry/return, preemption, security banking, timer or CPU trap/FPU permission enforcement.",
+      "Enabled pending interrupts stop execution before the next instruction, even if CPU-masked."
+    ]
+  },
+  "cache_control": [
+    {
+      "base": "0x7ffa000",
+      "registers": {
+        "0x0": "0x1",
+        "0x8": "0x0"
+      },
+      "commands": {
+        "invalidate_all": 1,
+        "clean_invalidate_all": 0
+      },
+      "limitations": [
+        "Experimental cold start with zeroed control registers.",
+        "Coherent backing memory; no cache lines, dirty data, bus effects or timing.",
+        "Only observed configuration and whole-cache commands are implemented.",
+        "BES-family layout corroborates firmware analysis; chip identity/variant not proven."
+      ]
+    },
+    {
+      "base": "0x7ffc000",
+      "registers": {
+        "0x0": "0x1",
+        "0x8": "0x2"
+      },
+      "commands": {
+        "invalidate_all": 1,
+        "clean_invalidate_all": 0
+      },
+      "limitations": [
+        "Experimental cold start with zeroed control registers.",
+        "Coherent backing memory; no cache lines, dirty data, bus effects or timing.",
+        "Only observed configuration and whole-cache commands are implemented.",
+        "BES-family layout corroborates firmware analysis; chip identity/variant not proven."
+      ]
+    }
+  ],
+  "aon_control": {
+    "chip_id_register": "0xe0000",
+    "revision": 14,
+    "ram_cfg": "0x2",
+    "clock_out": "0x0",
+    "identity_verified": false,
+    "limitations": [
+      "CHIP_ID is supplied explicitly for branch exploration, not read from the bracelet.",
+      "RAM_CFG starts at zero and only observed EMA bits 0..2 are supported.",
+      "CLK_OUT starts at zero; only observed timer-source bit 18 is supported as configuration.",
+      "No electrical RAM effects, clock signals, resets, timers or other AON registers."
+    ]
+  },
+  "iomux_control": {
+    "registers": {
+      "0x40086004": "0x0",
+      "0x40086008": "0xffffffff",
+      "0x4008600c": "0x0",
+      "0x40086010": "0x0",
+      "0x4008607c": "0x777777",
+      "0x40086080": "0x0",
+      "0x40086084": "0x0",
+      "0x40086088": "0x0",
+      "0x4008608c": "0x0",
+      "0x40086090": "0x0",
+      "0x4008602c": "0x0",
+      "0x40086030": "0xff00",
+      "0x40086094": "0x0",
+      "0x40086098": "0x0",
+      "0x4008609c": "0x0",
+      "0x400860ac": "0x3c00",
+      "0x400860c4": "0x0"
+    },
+    "pins": [
+      {
+        "pin": "P0_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P0_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P0_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P0_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P0_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P0_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P0_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P0_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P1_0",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P1_1",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P1_2",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P1_3",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P1_4",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P1_5",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P1_6",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P1_7",
+        "selector": 15,
+        "pull_up": false,
+        "pull_down": true
+      },
+      {
+        "pin": "P2_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P2_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P2_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P2_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P2_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P2_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P2_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P2_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P3_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_0",
+        "selector": 7,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_1",
+        "selector": 7,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_2",
+        "selector": 7,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_3",
+        "selector": 7,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_4",
+        "selector": 7,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_5",
+        "selector": 7,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P4_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P5_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P6_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P7_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P8_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_0",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_1",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_2",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_3",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_4",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_5",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_6",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      },
+      {
+        "pin": "P9_7",
+        "selector": 0,
+        "pull_up": false,
+        "pull_down": false
+      }
+    ],
+    "limitations": [
+      "Registers start at zero for this experiment; physical reset values are unverified.",
+      "Selectors are numeric routes, not a verified pin-function table for this bracelet.",
+      "0xac bits 10..13 retain observed firmware values; meaning differs from the reference SDK.",
+      "0xc4 supports only the observed zero write; interrupt behavior is not modeled.",
+      "No electrical pins, GPIO levels, clocks, serial transfers or connected peripherals."
+    ]
+  },
+  "timers": {
+    "input_ticks": 85925,
+    "channels": {
+      "0x40084000": {
+        "load": "0xffffffff",
+        "value": "0xffffffd5",
+        "control": "0x82",
+        "ris": "0x0"
+      },
+      "0x40003000": {
+        "load": "0xffffffff",
+        "value": "0xffffffe9",
+        "control": "0x82",
+        "ris": "0x0"
+      }
+    },
+    "limitations": [
+      "Both clocks receive one input tick per guest instruction; not physical cycles or elapsed time.",
+      "Disabled initial state and 0xffffffff counter/load are explicit experimental reset assumptions.",
+      "Only channel 0 per block, free-running 32-bit mode, no prescaler or interrupt enable.",
+      "No CMU clock gating, physical slow/fast frequency ratio, elapsed timer, periodic or one-shot mode."
+    ]
+  },
+  "cmu_control": {
+    "periph_clk": "0xc00",
+    "limitations": [
+      "Experimental zeroed PERIPH_CLK; only observed timer-source bits 10 and 11 are retained.",
+      "No physical frequencies, PLL, clock gating or reset effects; instruction-clock timers stay abstract."
+    ]
+  },
+  "ram_execution": {
+    "data_base": "0x20000000",
+    "execution_base": "0x200000",
+    "size": "0x160000",
+    "shared_backing": true,
+    "execution_alias_writable": false,
+    "limitations": [
+      "Experimental coherent SRAM mirror; no MPU, bus or cache timing.",
+      "Data view remains non-executable; execution view is read-only."
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "model": "miwear.watch.n66gl",
+  "version": "2.3.98",
+  "installed_version_evidence_date": "2026-09-17",
+  "source": "https://mos-res-abroad-cdn.home.mi.com/default/feff6a92d0d6c78226e376555475cd0d_upd_miwear.watch.n66gl.bin",
+  "download_used_signed_url_from_local_log": true,
+  "size": 43410024,
+  "md5": "feff6a92d0d6c78226e376555475cd0d",
+  "sha256": "08dc79298923afc8e8c29690f86a36054283a7862253268059e7302c115663a0",
+  "current_device_version_verified": true,
+  "current_device_version_verified_date": "2026-11-07",
+  "current_device_version_evidence": "Mi Fitness > Устройство > Еще > Версия устройства: 2.3.98; connected Redmi verified via ADB Wi-Fi"
+}

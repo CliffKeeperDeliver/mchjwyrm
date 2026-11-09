@@ -1,0 +1,142 @@
+[
+  {
+    "name": "recovery.bin",
+    "size": 1208320,
+    "sha256": "7b43d39d86ebc3c604a3c386f17672fa9f80f4e7b793894d18fa21e732e60b69",
+    "header_hex": "2d726f6d3166732d00126e00b76540f6726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "i18n.bin",
+    "size": 5026816,
+    "sha256": "ecdc40c5aba9510c6e14d09bd72eefa379cc474ba21b0e9da5c82f1b94d61518",
+    "header_hex": "2d726f6d3166732d004cb2305ea6f93b726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "font.bin",
+    "size": 43847680,
+    "sha256": "78850f6d9dd9c895d80b742d3d997c07d3ca4d2387c0006fc03a0d78745096f1",
+    "header_hex": "2d726f6d3166732d029d0c70cc5436bd726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "vendor.bin",
+    "size": 673792,
+    "sha256": "45b44a4e2460f15b5e7acc7643d89e0861f2e9a568824b3299b8cd675cef2107",
+    "header_hex": "2d726f6d3166732d000a44d0f077be66726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "quickapp.bin",
+    "size": 62464,
+    "sha256": "060c13e15284f15cf3bc063f6210cb83119bef76d463414880cb687aa38496df",
+    "header_hex": "2d726f6d3166732d0000f18018148abe726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "ota.json",
+    "size": 3457,
+    "sha256": "e1ec130c75355bad02f1a6a246554d99943149e30a8476d28c115dff0dd9e4e7",
+    "header_hex": "7b0a20202020226d616769635f737472696e67223a20226e3636222c0a20202020226f74615f76657273696f6e223a2022312e30222c0a202020202273775f76",
+    "signature_candidates": {}
+  },
+  {
+    "name": "version",
+    "size": 18,
+    "sha256": "20872ec97cef4d2b0bf1a7a02c4896bfc6b1ca4e5802e5c39ab27ed4ad1ee8ae",
+    "header_hex": "7265732e76657273696f6e3d312e302e320a",
+    "signature_candidates": {}
+  },
+  {
+    "name": "watchface.bin",
+    "size": 11285504,
+    "sha256": "46c53599b37dc5ca7339e191bacbd6656f675da78c328f7a2a0e444a89f5f9e3",
+    "header_hex": "2d726f6d3166732d00ac3340a75cbca7726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "vela_ap.bin",
+    "size": 6498804,
+    "sha256": "7c0115d92f7aa5d22dcb3f9a1ff0614904d736609d2d29eebc32f9ab3f7ebab1",
+    "header_hex": "ffffffff0000050000000000802873281448004701f05af9134880f30888134880f30a88002080f31488bff36f8f00f02ff800f08df800f049f90d490d4a0e4b",
+    "signature_candidates": {
+      "romfs": [
+        5065432,
+        5661791
+      ]
+    }
+  },
+  {
+    "name": "app.bin",
+    "size": 22448128,
+    "sha256": "46388e704e82321ade70f635a26c27f23b4a34176c0a18007651e9c8cefef561",
+    "header_hex": "2d726f6d3166732d01568610b26842ae726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "misc.bin",
+    "size": 540672,
+    "sha256": "49a74cbc10d36744a0b5ba1ca2d2547dcffb4ed8c1318c16eaaeb0891e94c4b8",
+    "header_hex": "2d726f6d3166732d00083f90a304be8a726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "system.bin",
+    "size": 3555328,
+    "sha256": "75585f43da1f93cb7707bd05c1c6619d31dea394e436dd3e7877cf86a2d5ecd7",
+    "header_hex": "2d726f6d3166732d00363e200090be64726f6d66730000000000000000000000000000490000002000000000d1ffff972e000000000000000000000000000000",
+    "signature_candidates": {
+      "romfs": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "vela_ota.bin",
+    "size": 657792,
+    "sha256": "319fec2ed511d8e3de30b531d2e30fd8d3cb8c8fad65d29d029782cef4dc3491",
+    "header_hex": "ffffffff00000500000000000c080e281448004701f054f8134880f30888134880f30a88002080f31488bff36f8f00f00bf900f027f800f0e3f80d490d4a0e4b",
+    "signature_candidates": {
+      "ELF": [
+        586270
+      ],
+      "romfs": [
+        626205,
+        637684
+      ]
+    }
+  }
+]

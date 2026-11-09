@@ -1,0 +1,30 @@
+; Static disassembly only; addresses are FILE OFFSETS, not validated runtime addresses.
+; Offset 0x10 follows the 16-byte image header. No code was executed.
+00000010: 1448       ldr      r0, [pc, #0x50]
+00000012: 0047       bx       r0
+00000014: 01f05af9   bl       #0x12cc
+00000018: 1348       ldr      r0, [pc, #0x4c]
+0000001a: 80f30888   msr      msp, r0
+0000001e: 1348       ldr      r0, [pc, #0x4c]
+00000020: 80f30a88   msr      msplim, r0
+00000024: 0020       movs     r0, #0
+00000026: 80f31488   msr      control, r0
+0000002a: bff36f8f   isb      sy
+0000002e: 00f02ff8   bl       #0x90
+00000032: 00f08df8   bl       #0x150
+00000036: 00f049f9   bl       #0x2cc
+0000003a: 0d49       ldr      r1, [pc, #0x34]
+0000003c: 0d4a       ldr      r2, [pc, #0x34]
+0000003e: 0e4b       ldr      r3, [pc, #0x38]
+00000040: 9a42       cmp      r2, r3
+00000042: bebf       ittt     lt
+00000044: 51f8040b   ldrlt    r0, [r1], #4
+00000048: 42f8040b   strlt    r0, [r2], #4
+0000004c: f8e7       blt      #0x40
+0000004e: 0b49       ldr      r1, [pc, #0x2c]
+00000050: 0b4a       ldr      r2, [pc, #0x2c]
+00000052: 0020       movs     r0, #0
+00000054: 9142       cmp      r1, r2
+00000056: bcbf       itt      lt
+00000058: 41f8040b   strlt    r0, [r1], #4
+0000005c: fae7       blt      #0x54
