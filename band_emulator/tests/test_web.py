@@ -64,6 +64,10 @@ class WebTests(unittest.TestCase):
         self.assertEqual(self.request('/api/command', {'action':'step'}, token=None)[0], 401)
         self.assertEqual(self.request('/api/command', {'action':'step'}, origin='http://unrelated.test')[0], 403)
         self.assertEqual(self.request('/api/state')[1]['instructions'], 0)
+        # Same host behind an HTTPS proxy is the same page, not another origin.
+        host = 'https://127.0.0.1:%d' % self.server.server_address[1]
+        self.assertEqual(self.request('/api/command', {'action':'pause'}, origin=host)[0], 200)
+        self.assertEqual(self.request('/api/command', {'action':'pause'}, origin='https://unrelated.test')[0], 403)
 
     def test_two_connections_observe_same_machine_and_snapshot(self):
         self.command('step', count=1)

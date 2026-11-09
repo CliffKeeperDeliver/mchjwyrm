@@ -231,7 +231,10 @@ class Handler(BaseHTTPRequestHandler):
             self.reply(401, dict(error='Нужен ключ доступа из окна запуска или ссылки подключения'))
             return False
         origin = self.headers.get('Origin')
-        if origin and origin != 'http://' + self.headers.get('Host', ''):
+        # An HTTPS reverse proxy (remote preview) changes the scheme and may
+        # rewrite Host; the page is still same-origin if its host matches.
+        hosts = {self.headers.get('Host', ''), self.headers.get('X-Forwarded-Host', '')} - {''}
+        if origin and not any(origin == scheme + host for scheme in ('http://', 'https://') for host in hosts):
             self.reply(403, dict(error='Другой источник запроса запрещён'))
             return False
         return True
@@ -257,16 +260,25 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         self.connection.settimeout(5)
+        try:
+            length = int(self.headers.get('Content-Length', '0'))
+        except ValueError:
+            length = 0
+        # Consume the body before any early reply: closing a socket with unread
+        # request bytes sends RST and the client loses the 401/403 response.
+        try:
+            body = self.rfile.read(length) if 1 <= length <= 8192 else b''
+        except OSError:
+            return
         if not self.authorized():
             return
         if self.path != '/api/command':
             self.reply(404, dict(error='Не найдено'))
             return
         try:
-            length = int(self.headers.get('Content-Length', '0'))
             if not 1 <= length <= 8192 or self.headers.get_content_type() != 'application/json':
                 raise ValueError('Ожидается JSON до 8192 байт')
-            command = json.loads(self.rfile.read(length))
+            command = json.loads(body)
             if not isinstance(command, dict) or not isinstance(command.get('action'), str):
                 raise ValueError('Нужно имя команды action')
             future = self.server.session.submit(command)
