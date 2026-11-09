@@ -13,9 +13,12 @@ import struct
 import time
 
 from debugger import Debugger, HERE, load_profile, arm
-from system_control import SystemControl
+from system_control import SystemControl, PeripheralError
+from iomux_control import IomuxControl
 from boot_timer import BootTimers
 from gpio_control import GpioControl
+from ispi_control import IspiControl
+from register_file import RegisterFile
 from exception_control import ExceptionFrames
 from unicorn import UC_PROT_READ, UC_PROT_WRITE, UC_HOOK_MEM_WRITE
 
@@ -87,6 +90,54 @@ class BootSystemControl(SystemControl):
         return r
 
 
+class BootGpio(GpioControl):
+    """GPIO plus the rest of the AON_PSC page 0x40085000 (holds GPIO wake config).
+
+    Offsets other than the modeled wake words are kept in a register file;
+    stock early bring-up configures them before the GPIO driver runs.
+    """
+
+    def __init__(self):
+        super().__init__()
+        self.aon_page = RegisterFile('AON_PSC', self.WAKE_BASE)
+
+    def _other(self, address):
+        return address & ~4095 == self.WAKE_BASE and address - self.WAKE_BASE not in self.wake_enabled
+
+    def read(self, address, size):
+        return self.aon_page.read(address, size) if self._other(address) else super().read(address, size)
+
+    def write(self, address, size, value):
+        if self._other(address):
+            return self.aon_page.write(address, size, value)
+        return super().write(address, size, value)
+
+    def snapshot(self):
+        return dict(super().snapshot(), aon_page=self.aon_page.snapshot())
+
+    def restore(self, state):
+        super().restore(state)
+        self.aon_page.restore(state['aon_page'])
+
+
+class BootIomux(IomuxControl):
+    """IOMUX with every word stored (e.g. 0x44 ISPI BT/RF access gates).
+
+    The strict debugger model keeps its observed-bits masks; the boot runner
+    lets stock drivers configure any pin/route word without side effects.
+    """
+
+    def _offset(self, address, size):
+        offset = address - self.BASE
+        if size != 4 or address % 4 or not 0 <= offset < 0x1000:
+            raise PeripheralError(f'Unaligned IOMUX access at {address:#x}, width {size}')
+        self.values.setdefault(offset, 0)
+        return offset
+
+    def write(self, address, size, value):
+        self.values[self._offset(address, size)] = value
+
+
 class BootMachine(Debugger):
     SHA256 = '7c0115d92f7aa5d22dcb3f9a1ff0614904d736609d2d29eebc32f9ab3f7ebab1'
     RAM_CODE = ((0x2005c1c0, 0x20066c18), (0x20068700, 0x2006ad38))
@@ -110,7 +161,12 @@ class BootMachine(Debugger):
         self.adc_samples = {4: 600}
         self.clock_profile = 3  # Virtual boot preset; enum, not Hz or physical cycles.
         self.power_profile = 3
-        self.hle = {0x0c10170a: 'early_board_bringup', 0x00261bf4: 'psram_training',
+        # Early bring-up 0x0c10170a now runs stock code (ISPI/PMU, timers, AON);
+        # only its NOR-controller and PLL-lock leaves are replaced. BT
+        # controller bring-up needs the BT CPU, which is not emulated.
+        self.hle = {0x0c1018e0: 'norflash_controller_idle', 0x0c101898: 'pll_source_select',
+                    0x0c1018d8: 'norflash_reinit_52mhz', 0x0c510390: 'bt_controller_absent',
+                    0x00261bf4: 'psram_training',
                     0x0c519bdc: 'debug_uart_init', 0x0c519bf4: 'debug_uart_write',
                     0x0025fd10: 'iomux_uart_setup', 0x0c51a81c: 'board_driver_early_init',
                     0x0c165074: 'debug_cycle_counter_setup',
@@ -141,8 +197,14 @@ class BootMachine(Debugger):
                          iomux_control=True, timers=True, cmu_control=True)
         self.core = BootSystemControl()
         self.timers = BootTimers()
-        self.gpio = GpioControl()
-        for base in self.gpio.PAGES:
+        # Stock early bring-up runs natively, so its clock/AON pokes land in
+        # logged register files instead of the strict debugger models.
+        self.aon = self._boot_aon()
+        self.cmu = self._boot_cmu()
+        self.iomux = BootIomux()
+        self.gpio = BootGpio()
+        self.ispi = IspiControl()
+        for base in self.gpio.PAGES + (IspiControl.BASE,):
             self.cpu.mmio_map(base, 4096, self._mmio_read, base, self._mmio_write, base)
             self.mmio_pages.add(base)
         self.exceptions = ExceptionFrames(self)
@@ -166,6 +228,15 @@ class BootMachine(Debugger):
         self.cpu.mem_map(0x287fe000, 0x2000, UC_PROT_READ)
         self.cpu.mem_write(0x287fe000, b'\xff' * 0x2000)
 
+    @staticmethod
+    def _boot_aon():
+        # CHIP_ID 0x000e0000 is the existing experimental revision input.
+        return RegisterFile('AON', 0x40080000, reset={0x00: 0xe0000}, read_only={0x00})
+
+    @staticmethod
+    def _boot_cmu():
+        return RegisterFile('CMU', 0x40000000)
+
     def _before_write(self, cpu, access, address, size, value, userdata):
         # Boot runner deliberately omits per-instruction CPU/RAM checkpoints.
         if self.ram_execution and any(address < end and address + size > start for start, end in self.RAM_CODE):
@@ -174,6 +245,8 @@ class BootMachine(Debugger):
     def _device(self, page):
         if page in GpioControl.PAGES and hasattr(self, 'gpio'):
             return self.gpio, 'gpio'
+        if page == IspiControl.BASE and hasattr(self, 'ispi'):
+            return self.ispi, 'ispi'
         return super()._device(page)
 
     def write_ram(self, address, data):
@@ -261,12 +334,7 @@ class BootMachine(Debugger):
                 self._stop('hle_contract_fault', service=name, reason='Invalid HLE return address')
                 return
             self.replacements.append(dict(service=name, pc=hex(address), lr=hex(cpu.reg_read(arm.UC_ARM_REG_LR))))
-            if name == 'early_board_bringup':
-                # Seed only state that the modeled early startup establishes.
-                self.timers.write(0x40084008, 4, 0x82)
-                self.timers.write(0x40003008, 4, 0x82)
-                self.cmu.write(0x4000005c, 4, 0xc00)
-            elif name in ('debug_uart_write', 'hal_trace_write'):
+            if name in ('debug_uart_write', 'hal_trace_write'):
                 pointer, length = cpu.reg_read(arm.UC_ARM_REG_R0), cpu.reg_read(arm.UC_ARM_REG_R1)
                 if length > 65536:
                     self._stop('hle_contract_fault', service=name, length=length)
@@ -394,7 +462,7 @@ class BootMachine(Debugger):
     def save(self, name):
         super().save(name)
         self.checkpoints[name]['boot'] = dict(psram=self.psram.raw[:self.psram_size],
-            gpio=self.gpio.snapshot(),
+            gpio=self.gpio.snapshot(), ispi=self.ispi.snapshot(),
             adc_samples=dict(self.adc_samples),
             clock_profile=self.clock_profile, power_profile=self.power_profile,
             replacements=copy.deepcopy(self.replacements), milestones=copy.deepcopy(self.milestones),
@@ -404,7 +472,20 @@ class BootMachine(Debugger):
             exception_total=self.exceptions.total_events)
 
     def restore(self, name):
-        super().restore(name)
+        state = self.checkpoints.get(name)
+        blocks = (state['aon'], state['cmu']) if state else None
+        if state:  # Debugger.restore would rebuild the strict models.
+            state['aon'] = state['cmu'] = None
+        try:
+            super().restore(name)
+        finally:
+            if state:
+                state['aon'], state['cmu'] = blocks
+        self.aon, self.cmu = self._boot_aon(), self._boot_cmu()
+        self.aon.restore(blocks[0])
+        self.cmu.restore(blocks[1])
+        self.iomux = BootIomux()
+        self.iomux.restore(self.checkpoints[name]['iomux'])
         state = self.checkpoints[name]
         self.core = BootSystemControl()
         self.core.restore(state['core'])
@@ -412,6 +493,7 @@ class BootMachine(Debugger):
         self.timers.restore(state['timers'])
         b = state['boot']
         self.gpio.restore(b['gpio'])
+        self.ispi.restore(b['ispi'])
         self.adc_samples = dict(b['adc_samples'])
         self.clock_profile, self.power_profile = b['clock_profile'], b['power_profile']
         ctypes.memmove(ctypes.addressof(self.psram), b['psram'], self.psram_size)
@@ -448,6 +530,7 @@ class BootMachine(Debugger):
             'Fault state may be partially committed; reset or restore is required.']
         r['tasks'] = self.tasks()
         r['gpio'] = self.gpio.report()
+        r['ispi'] = self.ispi.report()
         r['virtual_adc_inputs'] = dict(self.adc_samples)
         r['virtual_clock'] = dict(clock_profile=self.clock_profile, power_profile=self.power_profile,
                                  units='stock enum 0..7, not Hz', physical_timing=False)

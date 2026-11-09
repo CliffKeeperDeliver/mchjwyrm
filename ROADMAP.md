@@ -9,10 +9,11 @@ instructions, tasks Idle/hpwork/lpwork/AppBringUp).
    verified against `provenance.json` and kept out of git, Linux setup script,
    managed browser preview, all 96 tests passing. Fixed lost 401/403 replies
    (unread POST body → TCP reset) and HTTPS-proxy origin rejection.
-2. **Bluetooth bring-up boundary.** Model the internal SPI at `0x40009000`
-   enough for the chip-revision read of register `0x3000` (or a narrow,
-   documented HLE of the BT controller), until `AppBringUp` returns from
-   board init (`0x0c51ac86`).
+2. **Bluetooth bring-up boundary** — *done.* ISPI (PL022 + BES analog
+   interface) modeled; the stock early bring-up now opens it, passes the PMU
+   CHIP_ID check (`0x153`) and configures PMU/RF. The BT controller start is
+   replaced (`bt_controller_absent`: the BT CPU is not emulated). Board init
+   returns (`0x0c51ac86`), `bes_main` starts; next stop `0x40160404`.
 3. **Remaining board bring-up.** Continue `AppBringUp` through the next unknown
    peripherals (I2C/PMU, RTC, watchdog, sensors), same rule as now: stop on
    unknown hardware, identify it, model it narrowly, add a test. Goal: NuttX

@@ -285,8 +285,14 @@ class StockBootTests(unittest.TestCase):
             if r['status'] not in ('budget', 'timeout'):
                 break
         self.assertEqual(r['status'], 'memory_fault', r.get('fault'))
-        self.assertEqual(r['fault']['address'], '0x40009000')
-        self.assertIn('board_storage_init_returned', {m['stage'] for m in r['milestones']})
+        self.assertEqual(r['fault']['address'], '0x40160404')
+        stages = {m['stage'] for m in r['milestones']}
+        self.assertTrue({'board_storage_init_returned', 'board_init_returned'} <= stages)
+        self.assertIn('bes_main', {t['name'] for t in r['tasks']})
+        # Stock hal_analogif_open read PMU CHIP_ID over ISPI and accepted 0x153.
+        self.assertGreater(r['ispi']['frames'], 400)
+        self.assertNotIn('cs3 page0 0x00', r['ispi']['assumed_zero'])
+        self.assertIn('bt_controller_absent', {x['service'] for x in r['hle_replacements']})
         self.assertTrue(any(e['exception'] == 62 for e in r['exceptions']['events']))
         with self.assertRaises(ValueError):
             d.advance()
